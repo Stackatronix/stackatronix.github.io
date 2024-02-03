@@ -76,6 +76,7 @@
   background: linear-gradient(rgba(var(--bg-rgb-1), 0.100), rgba(var(--bg-rgb-1), 0.100), rgba(var(--bg-rgb-dark), 0.500));
 }
 
+
 .prj-img {
   border-radius: 15px;
   position: relative;
