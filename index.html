@@ -43,21 +43,17 @@
                         <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
                             href="#contact">Contact</a>
                     </li>
-
                 </ul>
                 <a href="#letstalk" class="btn btn-primary ms-lg-3" id="btn-bg-clr">Let's Talk</a>
             </div>
-
         </div>
     </nav>
 
     <section id="home" class="min-vh-100 d-flex align-items-center text-center">
-        <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video"></video>
-        <video src="assets/media/bg-vdo.mp4" muted autoplay loop class="bg-video"></video>
+        <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video p-3 rounded-5"></video>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-
                     <h1 class="head1">Don't Let The World Outpace You</h1>
                     <p class="p-home">Get The Essentials From Us</p>
                     <button class="btn btn-primary" id="btn-bg-clr" onclick="send()">Contact Us</button>
@@ -65,10 +61,7 @@
                         <a href="https://www.instagram.com/stackatronix_tech?igsh=dTVpNzE3dzN3bHA5"><span
                                 class="line-md--instagram"></span></a>
                         <a href="https://github.com/Stackatronix"><span class="line-md--github-loop"></span></a>
-
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -81,7 +74,7 @@
             </div>
 
             <div class="row">
-                <div class="col-12 col-lg-4 mt-4">
+                <div class="col-12 col-lg-4 mb-4">
                     <div class="image-wrap">
                         <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
                     </div>
@@ -91,7 +84,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 mt-4">
+                <div class="col-12 col-lg-4 mb-4">
                     <div class="image-wrap">
                         <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
                     </div>
@@ -101,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 mt-4">
+                <div class="col-12 col-lg-4 mb-4">
                     <div class="image-wrap">
                         <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
                     </div>
@@ -114,6 +107,161 @@
             </div>
         </div>
     </section>
+
+    <section class="text-center">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="head2">Our Services</h2>
+            </div>
+
+            <div class="row text-start">
+                <div class="mb-4 col-6 col-lg-3">
+                    <h5 class="head5"><span class="material-symbols--web"></span>Web Development</h5>
+                    <div class="text-start">
+                        <ul>
+                            <li>Ecommerce</li>
+                            <li>Landing Pages</li>
+                            <li>Personal Websites</li>
+                            <li>Portfolios</li>
+                            <li>& More</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4 col-6 col-lg-3">
+                    <h5 class="head5"><span class="material-symbols--web"></span>UI/UX Designs</h5>
+                    <div class="text-start">
+                        <ul>
+                            <li>Ecommerce</li>
+                            <li>Landing Pages</li>
+                            <li>Personal Websites</li>
+                            <li>Portfolios</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4 col-6 col-lg-3">
+                    <h5 class="head5"><span class="material-symbols--web"></span>Drone Technology</h5>
+                    <div class="text-start">
+                        <ul>
+                            <li>Ecommerce</li>
+                            <li>Landing Pages</li>
+                            <li>Personal Websites</li>
+                            <li>Portfolios</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4 col-6 col-lg-3">
+                    <h5 class="head5"><span class="material-symbols--web"></span>CAD Designing</h5>
+                    <div class="text-start">
+                        <ul>
+                            <li>Ecommerce</li>
+                            <li>Landing Pages</li>
+                            <li>Personal Websites</li>
+                            <li>Portfolios</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-4 col-6 col-lg-3">
+                    <h5 class="head5"><span class="material-symbols--web"></span>3D Printing</h5>
+                    <div class="text-start">
+                        <ul>
+                            <li>Ecommerce</li>
+                            <li>Landing Pages</li>
+                            <li>Personal Websites</li>
+                            <li>Portfolios</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-vh-100 d-flex text-center">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="head2">Let's Talk</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <form class="row g-3" id="submit-form" action="" onclick="submit_form();">
+
+                        <h6 class="head6">Let us know you first..</h6>
+                        <div class="form-group col-lg-6">
+                            <input type="text" name="name" class="form-control" placeholder="Name*" id="name" required>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input id="mobile" type="tel" name="mobile" class="form-control" placeholder="Mobile*"
+                                required>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Email*"
+                                required>
+                        </div>
+                        <h6 class="head6">I'm interested in..</h6>
+                        <div class="form-group col-lg-12">
+                            <fieldset>
+                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                                <label class="btn btn-light" for="option1">Web Development</label>
+                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                <label class="btn btn-light" for="option2">UI/UX</label>
+                                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                                <label class="btn btn-light" for="option3">Drone Technology</label>
+                                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                                <label class="btn btn-light" for="option4">CAD Design and Analysis</label>
+                                <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                                <label class="btn btn-light" for="option5">3D Printing</label>
+                            </fieldset>
+                        </div>
+
+                        <h6 class="head6">Tell us all the things about your project</h6>
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" rows="5" class="form-control" id="message"
+                                placeholder="Hi StackatroniX, My project is.." required></textarea>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="anchors btn" id="btn-bg-clr" type="submit">Send Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-start mt-4">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="logo"><img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX"></div>
+                        <h6 class="mt-2">enquiry.stackatronix@gmail.com</h6>
+                        <h6>+91 8137 886 588</h6>
+                        
+                        <p>© Copyright 2024 StackatroniX Technologies</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h5 class="head5 fs-5" style="padding-left: 0.5em;">Services</h5>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>UI/UX</li>
+                            <li>Drone Technology</li>
+                            <li>CAD Design and Analysis</li>
+                            <li>3D Printing</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="head5 fs-5">Socials</h5>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/stackatronix_tech?igsh=dTVpNzE3dzN3bHA5"><span
+                                class="line-md--instagram"></span></a>
+                        <a href="https://github.com/Stackatronix"><span class="line-md--github-loop"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
