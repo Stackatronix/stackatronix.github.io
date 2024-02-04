@@ -8,6 +8,7 @@
     <title>StackatroniX</title>
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="assets/scripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -48,6 +49,23 @@
             </div>
         </div>
     </nav>
+
+    <!-- Bootstrap Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="successModalLabel">Success!</h5>
+        </div>
+        <div class="modal-body">
+            Thank you for contacting StackatroniX. You will receive the reply in a while.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light close" data-dismiss="modal" aria-label="Close" id="btn-bg-clr">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <section id="home" class="min-vh-100 d-flex align-items-center text-center">
         <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video p-1 rounded-4"></video>
@@ -239,10 +257,12 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-sm-6 mx-3 mb-4">
+                    <div class="col-lg-5 col-sm-6 px-4 mb-4">
                         <div class="logo"><img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX"></div>
-                        <h6 class="mt-2">enquiry.stackatronix@gmail.com</h6>
-                        <h6>+91 8137 886 588</h6>
+                        <h6 class="mt-2"><a href="mailto:enquiry.stackatronix@gmail.com" class="contact-links"><span
+                            class="ic--baseline-mail"></span>enquiry.stackatronix@gmail.com</a></h6>
+                        <h6><a href="tel:8137886588" class="contact-links"><span
+                            class="solar--phone-bold"></span>+91 8137 886 588</a></h6>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <h5 class="head5 fs-5">Services</h5>
@@ -270,6 +290,32 @@
 
 
 </body>
+
+<script>
+    $("#submit-form").submit((e) => {
+        e.preventDefault();
+        $.ajax({
+          url: "https://formsubmit.co/ajax/enquiry.stackatronix@gmail.com",
+          data: $("#submit-form").serialize(),
+          method: "post",
+          success: function (response) {
+            $('#successModal').modal('show');
+
+            $('#successModal .close').on('click', function() {
+              // Reload the page
+              window.location.reload();
+            });
+            
+            //reset the form
+            $("#submit-form").trigger('reset');
+          },
+          error: function (err) {
+            alert("Something Went Wrong!! Please refresh the page and try again.");
+          }
+        });
+      });
+</script>
+
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
