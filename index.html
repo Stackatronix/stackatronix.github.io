@@ -26,20 +26,20 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
                             href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
                             href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
                             href="#services">Services</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
                             href="#contact">Contact</a>
                     </li>
@@ -50,7 +50,7 @@
     </nav>
 
     <section id="home" class="min-vh-100 d-flex align-items-center text-center">
-        <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video p-3 rounded-5"></video>
+        <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video p-1 rounded-4"></video>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-    <section class="text-center">
+    <section class="text-center" id="projects">
         <div class="container">
             <div class="section-head">
                 <h2 class="head2">Explore Our Latest Projects</h2>
@@ -108,7 +108,7 @@
         </div>
     </section>
 
-    <section class="text-center">
+    <section class="text-center" id="services">
         <div class="container">
             <div class="section-head">
                 <h2 class="head2">Our Services</h2>
@@ -116,7 +116,8 @@
 
             <div class="row text-start">
                 <div class="mb-4 col-6 col-lg-3">
-                    <h5 class="head5"><span class="material-symbols--web"></span>Web Development</h5>
+                    <span class="material-symbols--web"></span>
+                    <h5 class="head5">Web Development</h5>
                     <div class="text-start">
                         <ul>
                             <li>Ecommerce</li>
@@ -128,7 +129,8 @@
                     </div>
                 </div>
                 <div class="mb-4 col-6 col-lg-3">
-                    <h5 class="head5"><span class="material-symbols--web"></span>UI/UX Designs</h5>
+                    <span class="gg--ui-kit"></span>
+                    <h5 class="head5">UI/UX Designs</h5>
                     <div class="text-start">
                         <ul>
                             <li>Ecommerce</li>
@@ -139,7 +141,8 @@
                     </div>
                 </div>
                 <div class="mb-4 col-6 col-lg-3">
-                    <h5 class="head5"><span class="material-symbols--web"></span>Drone Technology</h5>
+                    <span class="mingcute--drone-fill"></span>
+                    <h5 class="head5">Drone Technology</h5>
                     <div class="text-start">
                         <ul>
                             <li>Ecommerce</li>
@@ -150,7 +153,8 @@
                     </div>
                 </div>
                 <div class="mb-4 col-6 col-lg-3">
-                    <h5 class="head5"><span class="material-symbols--web"></span>CAD Designing</h5>
+                    <span class="file-icons--openscad"></span>
+                    <h5 class="head5">CAD Design & Analysis</h5>
                     <div class="text-start">
                         <ul>
                             <li>Ecommerce</li>
@@ -162,7 +166,8 @@
                 </div>
 
                 <div class="mb-4 col-6 col-lg-3">
-                    <h5 class="head5"><span class="material-symbols--web"></span>3D Printing</h5>
+                    <span class="cbi--3dprinter-printing"></span>
+                    <h5 class="head5">3D Printing</h5>
                     <div class="text-start">
                         <ul>
                             <li>Ecommerce</li>
@@ -177,10 +182,10 @@
         </div>
     </section>
 
-    <section id="contact" class="min-vh-100 d-flex text-center">
-        <div class="container">
+    <section id="letstalk" class="d-flex text-center">
+        <div class="container mb-5">
             <div class="section-head">
-                <h2 class="head2">Let's Talk</h2>
+                <h2 class="head2 mb-3">Let's Talk</h2>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -189,35 +194,35 @@
 
                         <h6 class="head6">Let us know you first..</h6>
                         <div class="form-group col-lg-6">
-                            <input type="text" name="name" class="form-control" placeholder="Name*" id="name" required>
+                            <input type="text" name="name" class="form-inp col-12" placeholder="Name*" id="name" required>
                         </div>
                         <div class="form-group col-lg-6">
-                            <input id="mobile" type="tel" name="mobile" class="form-control" placeholder="Mobile*"
+                            <input id="mobile" type="tel" name="mobile" class="form-inp col-12" placeholder="Mobile*"
                                 required>
                         </div>
                         <div class="form-group col-lg-12">
-                            <input id="email" type="email" name="email" class="form-control" placeholder="Email*"
+                            <input id="email" type="email" name="email" class="form-inp col-12" placeholder="Email*"
                                 required>
                         </div>
-                        <h6 class="head6">I'm interested in..</h6>
+                        <h6 class="head6 mt-5">I'm interested in..</h6>
                         <div class="form-group col-lg-12">
                             <fieldset>
-                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                                <label class="btn btn-light" for="option1">Web Development</label>
+                                <input type="radio" class="btn btn-check" name="options" id="option1" autocomplete="off">
+                                <label class="btn m-2" style="background-color: #fff;" for="option1">Web Development</label>
                                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                <label class="btn btn-light" for="option2">UI/UX</label>
+                                <label class="btn m-2" style="background-color: #fff;"  for="option2">UI/UX</label>
                                 <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                                <label class="btn btn-light" for="option3">Drone Technology</label>
-                                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                                <label class="btn btn-light" for="option4">CAD Design and Analysis</label>
-                                <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                                <label class="btn btn-light" for="option5">3D Printing</label>
+                                <label class="btn m-2" style="background-color: #fff;"  for="option3">Drone Technology</label>
+                                <input type="radio" class="btn-check m-1" name="options" id="option4" autocomplete="off">
+                                <label class="btn m-2" style="background-color: #fff;"  for="option4">CAD Design and Analysis</label>
+                                <input type="radio" class="btn-check m-1" name="options" id="option5" autocomplete="off">
+                                <label class="btn m-2" style="background-color: #fff;"  for="option5">3D Printing</label>
                             </fieldset>
                         </div>
 
-                        <h6 class="head6">Tell us all the things about your project</h6>
+                        <h6 class="head6 mt-5">Tell us all the things about your project</h6>
                         <div class="form-group col-lg-12">
-                            <textarea name="message" rows="5" class="form-control" id="message"
+                            <textarea name="message" rows="5" class="form-inp col-12" id="message"
                                 placeholder="Hi StackatroniX, My project is.." required></textarea>
                         </div>
                         <div class="form-group col-lg-12 d-grid">
@@ -229,20 +234,18 @@
         </div>
     </section>
 
-    <footer class="text-start mt-4">
+    <footer class="text-start mt-4" id="contact">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-sm-6">
+                    <div class="col-lg-5 col-sm-6 mx-3 mb-4">
                         <div class="logo"><img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX"></div>
                         <h6 class="mt-2">enquiry.stackatronix@gmail.com</h6>
                         <h6>+91 8137 886 588</h6>
-                        
-                        <p>© Copyright 2024 StackatroniX Technologies</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <h5 class="head5 fs-5" style="padding-left: 0.5em;">Services</h5>
-                        <ul>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <h5 class="head5 fs-5">Services</h5>
+                        <ul class="footer-service">
                             <li>Web Development</li>
                             <li>UI/UX</li>
                             <li>Drone Technology</li>
@@ -250,7 +253,7 @@
                             <li>3D Printing</li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-2 col-sm-6 mb-4">
                         <h5 class="head5 fs-5">Socials</h5>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/stackatronix_tech?igsh=dTVpNzE3dzN3bHA5"><span
@@ -258,6 +261,7 @@
                         <a href="https://github.com/Stackatronix"><span class="line-md--github-loop"></span></a>
                         </div>
                     </div>
+                    <div class="col-12 mx-3"><p>© Copyright 2024 StackatroniX Technologies</p></div>
                 </div>
             </div>
         </div>
