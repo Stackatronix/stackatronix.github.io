@@ -214,6 +214,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-top: -2.4em;
+  width: 100vw;
 }
 
 .bg-video {
