@@ -211,7 +211,7 @@
          }
    
          .semicircle {
-           left: 30%;
+           left: 50px;
            height: 400px;
            width: 400px;
            border-radius: 200px 200px 200px 200px;
