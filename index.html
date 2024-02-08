@@ -30,7 +30,7 @@
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-3">
@@ -52,7 +52,7 @@
                     </li>
                 </ul>
                 <a href="#letstalk" class="btn btn-primary ms-lg-3" id="btn-bg-clr">Let's Talk</a>
-            </div>
+            
         </div>
     </nav>
 
@@ -499,6 +499,9 @@ function ScrollDetector(event) {
   }
   event.preventDefault();
 }
+    $('.nav-link').on('click',function(){
+        $(".navbar-collapse").removeClass("show");
+      })
 
 </script>
 </html>
