@@ -5,3 +5,4 @@ function send() {
         "Hi, Stackatronix";
     window.open(msg, '_blank').focus();
 };
+
