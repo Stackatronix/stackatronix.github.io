@@ -336,6 +336,10 @@ li {
           justify-content: flex-start;
           white-space: nowrap;    
         }
+
         .nav-link:active{
           color:var(--brand-color-primary) !important;
         }
+.talk{
+  white-space:pre;
+}
