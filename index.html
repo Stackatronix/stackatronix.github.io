@@ -444,7 +444,10 @@ function otherButtonStyle(btn, img) {
 
 }
 
-document.getElementsByClassName("semicircle")[0].addEventListener("wheel", function (event) {
+document.getElementsByClassName("semicircle")[0].addEventListener("wheel", ScrollDetector,false);
+document.getElementsByClassName("semicircle")[0].addEventListener("touchmove", ScrollDetector,false);
+
+function ScrollDetector(event) {
   var checker = event.deltaY;
   var serviceElements = [
     "service1",
@@ -495,7 +498,7 @@ document.getElementsByClassName("semicircle")[0].addEventListener("wheel", funct
     sliderChange(sliderSelected);
   }
   event.preventDefault();
-}, false);
+}
 
 </script>
 </html>
