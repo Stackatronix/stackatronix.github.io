@@ -444,11 +444,18 @@ function otherButtonStyle(btn, img) {
 
 }
 
-document.getElementsByClassName("semicircle")[0].addEventListener("wheel", ScrollDetector,false);
-document.getElementsByClassName("semicircle")[0].addEventListener("touchmove", ScrollDetector,false);
+document.getElementsByClassName("semicircle")[0].addEventListener("wheel", 
+function (event) {
+  checker = event.deltaY * 0.05;
+  ScrollDetector(checker)
+},false);
+document.getElementsByClassName("semicircle")[0].addEventListener("touchmove", function (event) {
+  checker = event.changedTouches[0].screenY * 0.005
+  ScrollDetector(checker)
+},false);
 
-function ScrollDetector(event) {
-  var checker = event.deltaY;
+function ScrollDetector(checker) {
+  console.log(checker);
   var serviceElements = [
     "service1",
     "service2",
@@ -456,7 +463,7 @@ function ScrollDetector(event) {
     "service4",
     "service5",
   ]
-  checker *= 0.05;
+  
   console.log(checker);
   if (checker <= -1.5) {
     serviceElements.forEach(element => {

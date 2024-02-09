@@ -1,259 +1,268 @@
     /* Using the border-radius property 
        to draw the semi-circle*/
 
-       @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,600&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,600&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600&display=swap');
 
-       /* ANIMATIONS */
-       @-webkit-keyframes animlabels {
-         from {
-           color: gray;
-           opacity: 50%;
-           font-weight: unset;
-           font-size: unset;
-         }
-   
-         to {
-           color: #373760;
-           opacity: unset;
-           font-weight: 600;
-           font-size: 19px;
-         }
-       }
-   
-       body {
-         overflow-x: hidden;
-       }
-   
-       .imagebox {
-         background-size: cover;
-         height: 20rem;
-         z-index: 2px;
-         border-radius: 40px;
-         margin: 10px;
-         margin-top: 100px;
-        }
-   
-       .image1 {
-         background-image: url(../media/kumpan-electric-SYo5eazBrls-unsplash.jpg);
-       }
-   
-       .image2 {
-         background-image: url(../media/PngItem_2430274.png);
-       }
-   
-       .image3 {
-         background-image: url(../media/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
-       }
-   
-       .image4 {
-         background-image: url(../media/daniel-korpai-mxPiMiz7KCo-unsplash.jpg);
-       }
-   
-       .image5 {
-         background-image: url(../media/opt-lasers-KshEaH06rV8-unsplash.jpg);
-       }
-   
-       .semicircle {
-         position: relative;
-         left: 30%;
-         height: 560px;
-         width: 560px;
-         border-radius: 280px 280px 280px 280px;
-         text-align: center;
-         border: solid 0px;
-         background: linear-gradient(to right, #3737607c, #ffffff);
-         font-family: 'Figtree', sans-serif;
-         padding: 0;
-       }
-   
-       .ranger span {
-        margin-left: 3px;
-         position: absolute;
-         inset: -45px;
-         transform: rotate(calc(-30deg * var(--i)));
-         z-index: 1;
-         transition: transform 0.3s ease;
-       }
-   
-       .ranger button {
-         inset: 5px;
-         width: 30px;
-         height: 7px;
-         border-radius: 10px;
-         border: 0;
-         background-color: gray;
-         opacity: 90%;
-         transition: background-color 0.3s ease;
-         transition: width 0.3s ease;
-         transition: height 0.3s ease;
-       }
-   
-       .hidder {
-         position: absolute;
-         background: white;
-         height: 560px;
-         width: 560px;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         font-size: 15px;
-         border-radius: 280px 0px 0px 280px;
-         margin-left: 0;
-         top: 0;
-         left: 1px;
-         padding: 10px;
-       }
-   
-       .hidder div {
-         margin-left: -70px;
-       }
-   
-       #serviceheading {
-         font-size: 20px;
-       }
-   
-       .ranger span h6 {
-         position: relative;
-         transform: rotate(calc(30deg * var(--i)));
-         color: gray;
-         opacity: 50%;
-         font-weight: 400;
-       }
-   
-       .label1 {
-         left: -100px;
-         top: -30px;
-       }
-   
-       .label2 {
-         left: -50px;
-         top: -65px;
-       }
-   
-       .label3 {
-         left: 0px;
-         top: -100px;
-         opacity: 90%;
-         font-weight: 600;
-         font-size: 19px;
-         color: #373760;
-         animation: animlabels 0.3s ease-in-out alternate;
-       }
-   
-       .label4 {
-         left: 50px;
-         top: -65px;
-       }
-   
-       .label5 {
-         left: 70px;
-         top: -30px;
-       }
-   
-       @media only screen and (max-width: 992px) {
-         .imagebox {
-           display: none;
-         }
-   
-         .semicircle {
-           left: 45%;
-           height: 480px;
-           width: 480px;
-           border-radius: 240px 240px 240px 240px;
-         }
-   
-         .ranger span {
-           margin-left: 18px;
-         }
-   
-         h6 {
-           font-size: 12px;
-         }
-   
-         .hidder {
-           height: 480px;
-           width: 480px;
-           border-radius: 240px 0px 0px 240px;
-           left: 2px;
-           font-size: 13px;
-         }
-   
-         .label1 {
-           left: -70px;
-           top: -20px;
-         }
-   
-         .label2 {
-           left: -40px;
-           top: -45px;
-         }
-   
-         .label3 {
-           left: 0px;
-           top: -70px;
-           font-size: 14px;
-         }
-   
-         .label4 {
-           left: 40px;
-           top: -45px;
-         }
-   
-         .label5 {
-           left: 45px;
-           top: -15px;
-         }
-       }
-   
-       @media only screen and (max-width: 630px) {
-         .imagebox {
-           display: none;
-         }
-   
-         .semicircle {
-           left: 50px;
-           height: 400px;
-           width: 400px;
-           border-radius: 200px 200px 200px 200px;
-         }
-   
-         h6 b {
-           display: none;
-         }
-   
-         .ranger span {
-           margin-left: 17px;
-         }
-   
-         .hidder {
-           height: 400px;
-           width: 400px;
-           border-radius: 200px 0px 0px 200px;
-         }
-   
-         .label1 {
-           left: -10px;
-           top: 0px;
-         }
-   
-         .label2 {
-           left: -10px;
-           top: 0px;
-         }
-   
-         .label3 {
-           left: 0px;
-           top: 0px;
-           font-size: 14px;
-         }
-   
-         .label4 {
-           left: -10px;
-           top: 0px;
-         }
-   
-         .label5 {
-           left: -10px;
-           top: 0px;
-         }
-       }
+    /* ANIMATIONS */
+    @-webkit-keyframes animlabels {
+      from {
+        color: gray;
+        opacity: 50%;
+        font-weight: unset;
+        font-size: unset;
+      }
+
+      to {
+        color: #373760;
+        opacity: unset;
+        font-weight: 600;
+        font-size: 19px;
+      }
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .imagebox {
+      background-size: cover;
+      height: 20rem;
+      z-index: 2px;
+      border-radius: 40px;
+      margin: 10px;
+      margin-top: 100px;
+    }
+
+    .image1 {
+      background-image: url(../media/kumpan-electric-SYo5eazBrls-unsplash.jpg);
+    }
+
+    .image2 {
+      background-image: url(../media/PngItem_2430274.png);
+    }
+
+    .image3 {
+      background-image: url(../media/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+    }
+
+    .image4 {
+      background-image: url(../media/daniel-korpai-mxPiMiz7KCo-unsplash.jpg);
+    }
+
+    .image5 {
+      background-image: url(../media/opt-lasers-KshEaH06rV8-unsplash.jpg);
+    }
+
+    .semicircle {
+      position: relative;
+      left: 30%;
+      height: 560px;
+      width: 560px;
+      border-radius: 280px 280px 280px 280px;
+      text-align: center;
+      border: solid 0px;
+      background: linear-gradient(to right, #3737607c, #ffffff);
+      font-family: 'Figtree', sans-serif;
+      padding: 0;
+    }
+
+    .ranger span {
+      margin-left: 3px;
+      position: absolute;
+      inset: -45px;
+      transform: rotate(calc(-30deg * var(--i)));
+      z-index: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .ranger button {
+      inset: 5px;
+      width: 30px;
+      height: 7px;
+      border-radius: 10px;
+      border: 0;
+      background-color: gray;
+      opacity: 90%;
+      transition: background-color 0.3s ease;
+      transition: width 0.3s ease;
+      transition: height 0.3s ease;
+    }
+
+    .hidder {
+      position: absolute;
+      background: white;
+      height: 560px;
+      width: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      font-size: 15px;
+      border-radius: 280px 0px 0px 280px;
+      margin-left: 0;
+      top: 0;
+      left: 1px;
+      padding: 10px;
+    }
+
+    .hidder div {
+      margin-left: -70px;
+    }
+
+    #serviceheading {
+      font-size: 20px;
+    }
+
+    .ranger span h6 {
+      position: relative;
+      transform: rotate(calc(30deg * var(--i)));
+      color: gray;
+      opacity: 50%;
+      font-weight: 400;
+    }
+
+    .label1 {
+      left: -100px;
+      top: -30px;
+    }
+
+    .label2 {
+      left: -50px;
+      top: -65px;
+    }
+
+    .label3 {
+      left: 0px;
+      top: -100px;
+      opacity: 90%;
+      font-weight: 600;
+      font-size: 19px;
+      color: #373760;
+      animation: animlabels 0.3s ease-in-out alternate;
+    }
+
+    .label4 {
+      left: 50px;
+      top: -65px;
+    }
+
+    .label5 {
+      left: 70px;
+      top: -30px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .imagebox {
+        display: none;
+      }
+
+      .semicircle {
+        left: 60%;
+        height: 480px;
+        width: 480px;
+        border-radius: 240px 240px 240px 240px;
+      }
+
+      .ranger span {
+        margin-left: 18px;
+      }
+
+      h6 {
+        font-size: 12px;
+      }
+
+      .hidder {
+        height: 480px;
+        width: 480px;
+        border-radius: 240px 0px 0px 240px;
+        left: 2px;
+        font-size: 13px;
+      }
+
+      #serviceheading {
+        font-size: 17px;
+      }
+      .label1 {
+        left: -70px;
+        top: -20px;
+      }
+
+      .label2 {
+        left: -40px;
+        top: -45px;
+      }
+
+      .label3 {
+        left: 0px;
+        top: -70px;
+        font-size: 14px;
+      }
+
+      .label4 {
+        left: 40px;
+        top: -45px;
+      }
+
+      .label5 {
+        left: 45px;
+        top: -15px;
+      }
+    }
+
+    @media only screen and (max-width: 630px) {
+      .imagebox {
+        display: none;
+      }
+
+      .semicircle {
+        left: 40%;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px 150px 150px 150px;
+      }
+
+      h6 b {
+        display: none;
+      }
+
+      .ranger span {
+        margin-left: 17px;
+      }
+
+      .hidder {
+        height: 300px;
+        width: 300px;
+        border-radius: 150px 150px 150px 150px;
+        left: 1px;
+        font-size: 10px;
+        padding-left: 50px;
+      }
+      #serviceheading {
+        font-size: 15px;
+      }
+      .label1 {
+        left: -10px;
+        top: 0px;
+      }
+
+      .label2 {
+        left: -10px;
+        top: 0px;
+      }
+
+      .label3 {
+        left: 0px;
+        top: 0px;
+        font-size: 14px;
+      }
+
+      .label4 {
+        left: -10px;
+        top: 0px;
+      }
+
+      .label5 {
+        left: -10px;
+        top: 0px;
+      }
+    }
