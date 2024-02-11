@@ -415,6 +415,10 @@
     document.getElementById(btn).style.width = "40px"
     document.getElementById(btn).style.opacity = "100%"
     document.getElementById(btn).style.backgroundColor = "#373760"
+    if (window.innerWidth <= 630) {
+        document.getElementById(btn).style.height = "7px"
+        document.getElementById(btn).style.width = "25px"     
+      }
   }
 
   function otherButtonStyle(btn, img) {
@@ -442,6 +446,11 @@
       document.getElementById(element).style.width = "30px"
       document.getElementById(element).style.opacity = "90%"
       document.getElementById(element).style.backgroundColor = "gray"
+      
+      if (window.innerWidth <= 630) {
+        document.getElementById(element).style.height = "3px"
+        document.getElementById(element).style.width = "15px"     
+      }
     });
     // images
     otherimages.forEach(element => {

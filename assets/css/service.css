@@ -271,8 +271,8 @@
         height: 300px;
         width: 300px;
         border-radius: 150px 150px 150px 150x;
-        /* transform: scale(1.1); */
-        margin-top: 50px;
+        transform: scale(1.2);
+        margin-block: 50px;
       }
 
       h6 b {
@@ -280,8 +280,8 @@
       }
 
       .ranger span {
-        margin-left: -10px;
-        inset: -40px;
+        margin-left: -5px;
+        inset: -45px;
       }
 
       .hidder {
@@ -292,7 +292,7 @@
         font-size: 12px;
         justify-content: center;
         text-align: left;
-        padding-left: 35%;
+        padding-left: 40%;
       }
 
       #serviceheading {
