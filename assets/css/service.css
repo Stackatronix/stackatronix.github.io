@@ -267,10 +267,10 @@
       }
 
       .semicircle {
-        left: 50%;
-        height: 370px;
-        width: 370px;
-        border-radius: 185px 185px 185px 185x;
+        left: 35%;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px 150px 150px 150x;
         /* transform: scale(1.1); */
         margin-top: 50px;
       }
@@ -285,9 +285,9 @@
       }
 
       .hidder {
-        height: 370px;
-        width: 370px;
-        border-radius: 185px 185px 185px 185x;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px 150px 150px 150x;
         left: 1px;
         font-size: 12px;
         justify-content: center;
