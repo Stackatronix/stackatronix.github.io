@@ -96,13 +96,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;
+      text-align: left;
       font-size: 15px;
       border-radius: 280px 0px 0px 280px;
       margin-left: 0;
       top: 0;
       left: 1px;
-      padding: 10px;
+      padding: 200px;
       color: #373760;
     }
 
@@ -120,8 +120,8 @@
     }
 
     .label1 {
-      left: -150px;
-      top: -20px;
+      left: -100px;
+      top: -10px;
       opacity: 50%;
       font-weight: 400;
       font-size: 19px;
@@ -129,8 +129,8 @@
     }
 
     .label2 {
-      left: -130px;
-      top: -50px;
+      left: -100px;
+      top: -45px;
       opacity: 50%;
       font-weight: 400;
       font-size: 19px;
@@ -138,8 +138,8 @@
     }
 
     .label3 {
-      left: -85px;
-      top: -75px;
+      left: -80px;
+      top: -60px;
       opacity: 50%;
       font-weight: 400;
       font-size: 19px;
@@ -148,7 +148,7 @@
 
     .label4 {
       left: -40px;
-      top: -100px;
+      top: -70px;
       opacity: 50%;
       font-weight: 400;
       font-size: 19px;
@@ -157,7 +157,7 @@
 
     .label5 {
       left: 0px;
-      top: -110px;
+      top: -75px;
       opacity: 90%;
       font-weight: 600;
       font-size: 19px;
@@ -167,7 +167,7 @@
 
     .label6 {
       left: 40px;
-      top: -95px;
+      top: -75px;
       opacity: 50%;
       font-weight: 400;
       font-size: 19px;
@@ -180,12 +180,12 @@
       font-size: 19px;
       color: gray;
       left: 70px;
-      top: -90px;
+      top: -60px;
     }
 
     .label8 {
       left: 80px;
-      top: -60px;
+      top: -30px;
       opacity: 50%;
       font-weight: 400;
       font-size: 19px;
@@ -193,8 +193,8 @@
     }
 
     .label9 {
-      left: 90px;
-      top: -30px;
+      left: 80px;
+      top: -10px;
       opacity: 50%;
       font-weight: 400;
       font-size: 19px;
