@@ -2,513 +2,566 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/media/stack-bg-logo.png" type="image/icon type">
-    <title>StackatroniX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/media/stack-bg-logo.png" type="image/icon type">
+  <title>StackatroniX</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/service.css" rel="stylesheet">
-    <script src="assets/scripts/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/service.css" rel="stylesheet">
+  <script src="assets/scripts/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-    <!-- Nav Bar -->
+  <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#home">Home</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#services">Services</a>
-                    </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-3">
+          <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;" href="#home">Home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
+            href="#projects">Projects</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
+            href="#services">Services</a>
+        </li>
 
-                    <li class="nav-item mx-3">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <a href="#letstalk" class="btn btn-primary ms-lg-3 talk" id="btn-bg-clr">Let's Talk</a>
-            
-        </div>
-    </nav>
+        <li class="nav-item mx-3">
+          <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
+            href="#contact">Contact</a>
+        </li>
+      </ul>
+      <a href="#letstalk" class="btn btn-primary ms-lg-3 talk" id="btn-bg-clr">Let's Talk</a>
 
-    <!-- Bootstrap Modal -->
-  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    </div>
+  </nav>
+
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title text-success" id="successModalLabel">Success!</h5>
         </div>
         <div class="modal-body">
-            Thank you for contacting StackatroniX. You will receive the reply in a while.
+          Thank you for contacting StackatroniX. You will receive the reply in a while.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-light close" data-dismiss="modal" aria-label="Close" id="btn-bg-clr">Close</button>
+          <button type="button" class="btn btn-outline-light close" data-dismiss="modal" aria-label="Close"
+            id="btn-bg-clr">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-    <section id="home" class="min-vh-100 d-flex align-items-center text-center">
-        <video src="assets/media/bg-vdo.mp4" muted autoplay loop class="bg-video"></video>
-        <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video"></video>
-        
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="head1">Don't Let The World Outpace You</h1>
-                    <p class="p-home">Get The Essentials From Us</p>
-                    <button class="btn btn-primary" id="btn-bg-clr" onclick="send()">Contact Us</button>
-                    <div class="text-center mt-2">
-                        <a href="https://www.instagram.com/stackatronix_tech?igsh=dTVpNzE3dzN3bHA5"><span
-                                class="line-md--instagram"></span></a>
-                        <a href="https://github.com/Stackatronix"><span class="line-md--github-loop"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="home" class="min-vh-100 d-flex align-items-center text-center">
+    <video src="assets/media/bg-vdo.mp4" muted autoplay loop class="bg-video"></video>
+    <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video"></video>
 
-    <section class="text-center" id="projects">
-        <div class="container">
-            <div class="section-head">
-                <h2 class="head2">Explore Our Latest Projects</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="image-wrap">
-                        <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
-                    </div>
-                    <div class="text-start text-pos">
-                        <h5 class="prj-head">Ecommerce Landing page</h5>
-                        <a href="#" class="anchors prj-link">View Demo</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="image-wrap">
-                        <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
-                    </div>
-                    <div class="text-start text-pos">
-                        <h5 class="prj-head">Ecommerce Landing page</h5>
-                        <a href="#" class="anchors prj-link">View Demo</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="image-wrap">
-                        <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
-                    </div>
-                    <div class="text-start text-pos">
-                        <h5 class="prj-head">Ecommerce Landing page</h5>
-                        <a href="#" class="anchors prj-link">View Demo</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="row container-fluid" id="services" style="text-align: center; margin-top: 40px;">
-        <h1 class="col-12" style="font-weight: 700;">What We Provide</h1>
-        <div class="col-lg-4 imagebox">
-        </div>
-        <div class="semicircle col-lg-7">
-          <div class="ranger">
-            <span style="--i:0;"><button disabled style="display: none;"></button></span>
-            <span style="--i:1;" id="service1" class="services">
-              <h6 class="label1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1.26em" height="1em" viewBox="0 0 641 512">
-                  <path fill="currentColor"
-                    d="m615.983 236.859l-36.719 20.91c4.826-26.885-6.252-91.781-31.433-138.823c-20.639-38.557-63.398-76.262-63.398-76.262l24.153-11.688c20.225-5.726 61.79-8.373 102.834 66.74c34.447 63.04 41.856 118 4.563 139.123M121.352 349.328c-29.7-50.767-61.997-67.888-88.04-68.296c-11.1-.174-17.072 4.192-17.072 4.192c-26.956 18.498-20.444 100.072 20.202 159.304c34.327 50.025 67.304 71.535 93.592 66.844l.013-.008c32.285-19.471 27.58-100.03-8.695-162.036m89.512-33.337c-.476 31.65-2.064 48.326 19.297 69.616c10.242-6.955 30.545-18.085 39.166-22.156c8.984-31.475-6.328-75.413-48.227-113.99c-14.642 9.633-37.94 20.91-49.25 23.496c7.06 14.119 20.867 32.395 39.014 43.034m221.507-75.685c-30.124 10.66-71.984 58.757-75.216 113.357c13.469.73 46.644 16.545 60.32 30.515c7.381-8.119 12.49-18.06 15.253-29.757c3.813-16.136 2.857-30.401.604-35.6c20.53-8.015 42.649-25.842 50.615-41.008c-11.386-6.88-41.761-27.207-51.576-37.507m-46.687-91.01c-6.657-14.265-.695-27.9 3.908-48.505c-28.639-1.798-53.129 12.179-62.936 21.986c-8.493-7.591-35.77-25.673-55.227-23.775c2.373 17.104 2.924 42.882-.337 64.083c29.025 10.75 89.025 7.865 114.592-13.79M322.664 0C459.136 0 569.77 111.758 569.77 249.618S459.137 499.236 322.663 499.236c-44.84 0-81.022-7.918-114.019-26.703l-57.592 28.796c9.81-13.172 14.49-34.13 13.06-60.046c-1.816-32.87-13.053-69.149-30.83-99.535c-14.274-24.397-30.087-42.884-47.001-54.949c-14.199-10.127-28.77-15.537-43.354-16.115l32.695-16.347C74.508 107.31 186.19 0 322.663 0M204.718 123.029c13.584 30.697 56.317 52.802 103.366 52.802c72.56 0 112.527-27.46 111.876-73.63c-36.29-28.876-94.102 7.63-94.102 7.63s-62.58-49.982-114.207 6.124c0 0-2.62 2.292-6.933 7.074m-48.775 104.83c-2.322 35.272 9.951 70.012 42.399 93.471c-3.78 38.384 12.581 80.624 61.196 93.485c26.59-31.294 40.936-83.212 2.146-139.038c-30.693-44.172-72.56-53.439-105.74-47.918m344.955 20.72c-4.099-2.766-8.336-5.577-12.51-8.082c-50.151-30.09-94.182 1.46-122.751 49.293c-24.573 41.143-28.94 102.638-11.108 130.129c4.488-.43 9.076-.965 13.75-1.618c90.371-12.626 76.365-93.167 76.365-93.167c43.715-20.541 57.668-48.375 56.254-76.554" />
-                </svg>
-                <b style="font-weight: unset;">CAD Designing & Analysis</b>
-              </h6><button id="servicebtn1" onclick="sliderChange(1)"></button>
-            </span>
-            <span style="--i:2;" id="service2" class="services">
-              <h6 class="label2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
-                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
-                    <path d="m12 12l7 7m17 17l-7-7m7-17l-7 7M12 36l7-7" />
-                    <path fill="currentColor" d="M19 19h10v10H19z" />
-                    <path d="M36 19a7 7 0 1 0-7-7m7 17a7 7 0 1 1-7 7m-17-7a7 7 0 1 0 7 7m-7-17a7 7 0 1 1 7-7" />
-                  </g>
-                </svg>
-                <b style="font-weight: unset;">Drone Technologies</b>
-              </h6><button id="servicebtn2"></button>
-            </span>
-            <span style="--i:3;" id="service3" class="services">
-              <h6 class="label3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h10.5v-3.5H4zm12.5 0H20V9h-3.5zM4 12.5h10.5V9H4z" />
-                </svg>
-                <b style="font-weight: unset;">Web Development</b>
-              </h6><button id="servicebtn3"></button>
-            </span>
-            <span style="--i:4;" id="service4" class="services">
-              <h6 class="label4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <g fill="currentColor">
-                    <path fill-rule="evenodd"
-                      d="M14 6h-4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1m-4-2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3z"
-                      clip-rule="evenodd" />
-                    <path
-                      d="m6 7.46l-2.507-.418A3 3 0 0 0 0 10v4.917a3 3 0 0 0 3.493 2.96L6 17.458v-2.027l-2.836.472A1 1 0 0 1 2 14.918v-4.917a1 1 0 0 1 1.164-.987L6 9.487zm12 0l2.507-.418A3 3 0 0 1 24 10v4.917a3 3 0 0 1-3.493 2.96L18 17.458v-2.027l2.836.472A1 1 0 0 0 22 14.918v-4.917a1 1 0 0 0-1.164-.987L18 9.487z" />
-                  </g>
-                </svg>
-                <b style="font-weight: unset;">UI/Ux Design</b>
-              </h6><button id="servicebtn4"></button>
-            </span>
-            <span style="--i:5;" id="service5" class="services">
-              <h6 class="label5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M3.32.954S2.388.78 2.388 2.138c0 1.359.222 18.01.222 18.01s.379.663.521.631c.141-.03 2.546-.358 2.577-.363l.017-.002l.013-4.004l.012-3.9l4.259-.001l-.004-.305l-4.254-.054l.005-1.616l5.04.057l.012-.322l-5.05-.117l.017-6.148s-.056-.673.354-.673s10.856.377 10.856.377s.343.012.354.257c.005.107.003 3.4.004 5.959l-1.068.114l.002.315l-4.215-.062l-.006.338l4.244.058l.005 1.535l-2.39.017l-.002.296l2.377-.023l.003.235h1.053c0 1.01.002 1.713 0 2.43c.542.158 1.385.435 1.385.435l-1.403.21c0 .223.002.572.005.923l-.93-.35l-.654.083l1.585.589l.003.367l2.072-.291l-.007-14.759s.01-.546-.564-.564C18.263 1.803 3.32.954 3.32.954m6.26 8.662l-.005.55l1.303.032l-.03.869l-.79-.02l.021 1.8l.284-.03l.007.35l.969.03v.566a.034.034 0 0 1 .033.033v.013l.238.12a.033.033 0 0 1 .016.014a.033.033 0 0 1 .002.02a.029.029 0 0 1-.002.006l.417.12l-.02-2.048a.067.067 0 0 1 .016-.018c.02 0 1.736-.007 1.736-.018l.002-.947l-1.796.013l.03-1.331zm4.193 2.474l-1.618.017l.02 1.91l1.598-.044zm-2.434 1.706l-.158.157l.21.21l.205-.204l-.257-.13zm2.425.405c-.029 0-7.873.896-7.873.896l3.197 1.718l9.556-1.209s-4.85-1.405-4.88-1.405m-7.923.925l.01.495l.217.113l.618.02l2.121 1.164l-.257.186l.412.288l1.308-.113l.33-.186l6.293-.793l.36.062l-.03-.515l-8.168 1.04zm.649 1.283l-.706.02l-.01 4.002l.84-.176l-.037-.932l3.276 2.488s-.026.453.03.87c.057.417.613.37.613.37l1.293-.277l.2-.242l7.957-1.525l.212.206l1.158-.247c.119-.026.211-.2.273-.314c.062-.113-.024-1.802-.005-2.333c.016-.445-.08-.425-.129-.438l-.757.134s-.208.057-.314.01c-.174-.076-.154-.205-.154-.205s.01-.222-.067-.469c-.077-.247-.258-.211-.258-.211l-7.08.994s-.372.058-.695.14l-1.802-.99l-.041.023a.033.033 0 0 1-.014.004l-.526.046l2.018 1.065c-.003.007-.037.009-.038.016c-.097.882-.202.989-.463 1.03l-1.385.195l-3.08-2.111Z" />
-                </svg>
-                <b style="font-weight: unset;">3D Printing</b>
-              </h6><button id="servicebtn5"></button>
-            </span>
-            <span style="--i:6;"><button disabled style="display: none;"></button></span>
-            <div class="hidder">
-              <div>
-                <h3 id="serviceheading">Web Development</h3>
-                <p id="servicedetails">
-                  ecommerce websites
-                  personal websites
-                  portfolio websites
-                  business websites
-                  landing pages
-                  & more
-              </div>
-              </p>
-            </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="head1">Don't Let The World Outpace You</h1>
+          <p class="p-home">Get The Essentials From Us</p>
+          <button class="btn btn-primary" id="btn-bg-clr" onclick="send()">Contact Us</button>
+          <div class="text-center mt-2">
+            <a href="https://www.instagram.com/stackatronix_tech?igsh=dTVpNzE3dzN3bHA5"><span
+                class="line-md--instagram"></span></a>
+            <a href="https://github.com/Stackatronix"><span class="line-md--github-loop"></span></a>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="letstalk" class="d-flex text-center">
-        <div class="container mb-5">
-            <div class="section-head">
-                <h2 class="head2 mb-3">Let's Talk</h2>
-            </div>
-            <div class="row">
-                <div class="col-12">
+  <section class="text-center" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="head2">Explore Our Latest Projects</h2>
+      </div>
 
-                    <form class="row g-3" id="submit-form" action="" onclick="submit_form();">
-
-                        <h6 class="head6">Let us know you first..</h6>
-                        <div class="form-group col-lg-6">
-                            <input type="text" name="name" class="form-inp col-12" placeholder="Name*" id="name" required>
-                        </div>
-                        <div class="form-group col-lg-6">
-                            <input id="mobile" type="tel" name="mobile" class="form-inp col-12" placeholder="Mobile*"
-                                required>
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <input id="email" type="email" name="email" class="form-inp col-12" placeholder="Email*"
-                                required>
-                        </div>
-                        <h6 class="head6 mt-5">I'm interested in..</h6>
-                        <div class="form-group col-lg-12">
-                            <fieldset>
-                                <input type="radio" class="btn btn-check" name="option" value="Web Development" id="option1" autocomplete="off">
-                                <label class="btn m-2" style="background-color: #fff;" for="option1">Web Development</label>
-                                <input type="radio" class="btn-check" name="option" id="option2" value="UI/UX" autocomplete="off">
-                                <label class="btn m-2" style="background-color: #fff;"  for="option2">UI/UX</label>
-                                <input type="radio" class="btn-check" name="option" id="option3" value="Drone Technology" autocomplete="off">
-                                <label class="btn m-2" style="background-color: #fff;"  for="option3">Drone Technology</label>
-                                <input type="radio" class="btn-check m-1" name="option" id="option4" value="CAD" autocomplete="off">
-                                <label class="btn m-2" style="background-color: #fff;"  for="option4">CAD Design and Analysis</label>
-                                <input type="radio" class="btn-check m-1" name="option" id="option5" value="3D Printing" autocomplete="off">
-                                <label class="btn m-2" style="background-color: #fff;"  for="option5">3D Printing</label>
-                            </fieldset>
-                        </div>
-
-                        <h6 class="head6 mt-5">Tell us all the things about your project</h6>
-                        <div class="form-group col-lg-12">
-                            <textarea name="message" rows="5" class="form-inp col-12" id="message"
-                                placeholder="Hi StackatroniX, My project is.." required></textarea>
-                        </div>
-                        <div class="form-group col-lg-12 d-grid">
-                            <button class="anchors btn" id="btn-bg-clr" type="submit">Send Request</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="image-wrap">
+            <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
+          </div>
+          <div class="text-start text-pos">
+            <h5 class="prj-head">Ecommerce Landing page</h5>
+            <a href="#" class="anchors prj-link">View Demo</a>
+          </div>
         </div>
-    </section>
 
-    <footer class="text-start mt-4" id="contact">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6 px-4 mb-4">
-                        <div class="logo"><img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX"></div>
-                        <h6 class="mt-2"><a href="mailto:enquiry.stackatronix@gmail.com" class="contact-links"><span
-                            class="ic--baseline-mail"></span>enquiry.stackatronix@gmail.com</a></h6>
-                        <h6><a href="tel:8137886588" class="contact-links"><span
-                            class="solar--phone-bold"></span>+91 8137 886 588</a></h6>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <h5 class="head5 fs-5">Services</h5>
-                        <ul class="footer-service">
-                            <li>Web Development</li>
-                            <li>UI/UX</li>
-                            <li>Drone Technology</li>
-                            <li>CAD Design and Analysis</li>
-                            <li>3D Printing</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 mb-4">
-                        <h5 class="head5 fs-5">Socials</h5>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com/stackatronix_tech?igsh=dTVpNzE3dzN3bHA5"><span
-                                class="line-md--instagram"></span></a>
-                        <a href="https://github.com/Stackatronix"><span class="line-md--github-loop"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-12 px-4"><p>© Copyright 2024 StackatroniX Technologies</p></div>
-                </div>
-            </div>
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="image-wrap">
+            <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
+          </div>
+          <div class="text-start text-pos">
+            <h5 class="prj-head">Ecommerce Landing page</h5>
+            <a href="#" class="anchors prj-link">View Demo</a>
+          </div>
         </div>
-    </footer>
+
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="image-wrap">
+            <img src="assets/media/project1.jpg" alt="projects" class="prj-img col-12">
+          </div>
+          <div class="text-start text-pos">
+            <h5 class="prj-head">Ecommerce Landing page</h5>
+            <a href="#" class="anchors prj-link">View Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="row container-fluid mb-5" id="services" style="text-align: center; margin-top: 40px;">
+    <h1 class="col-12 my-5" style="font-weight: 700;">What We Provide</h1>
+    <div class="col-lg-4 imagebox">
+    </div>
+    <div class="semicircle col-lg-7">
+      <div class="ranger">
+        <span style="--i:-1; display: none;"><button></button></span>
+        <span style="--i:0; display: none;"><button></button></span>
+        <span style="--i:1; display: none;"><button></button></span>
+        <span style="--i:2; display: none;"><button></button></span>
+        <span style="--i:3; display: none;"><button></button></span>
+        <span style="--i:4; display: none;"><button></button></span>
+        <span style="--i:5;" id="service1" class="services">
+          <h6 class="label5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.26em" height="1em" viewBox="0 0 641 512">
+              <path fill="currentColor"
+                d="m615.983 236.859l-36.719 20.91c4.826-26.885-6.252-91.781-31.433-138.823c-20.639-38.557-63.398-76.262-63.398-76.262l24.153-11.688c20.225-5.726 61.79-8.373 102.834 66.74c34.447 63.04 41.856 118 4.563 139.123M121.352 349.328c-29.7-50.767-61.997-67.888-88.04-68.296c-11.1-.174-17.072 4.192-17.072 4.192c-26.956 18.498-20.444 100.072 20.202 159.304c34.327 50.025 67.304 71.535 93.592 66.844l.013-.008c32.285-19.471 27.58-100.03-8.695-162.036m89.512-33.337c-.476 31.65-2.064 48.326 19.297 69.616c10.242-6.955 30.545-18.085 39.166-22.156c8.984-31.475-6.328-75.413-48.227-113.99c-14.642 9.633-37.94 20.91-49.25 23.496c7.06 14.119 20.867 32.395 39.014 43.034m221.507-75.685c-30.124 10.66-71.984 58.757-75.216 113.357c13.469.73 46.644 16.545 60.32 30.515c7.381-8.119 12.49-18.06 15.253-29.757c3.813-16.136 2.857-30.401.604-35.6c20.53-8.015 42.649-25.842 50.615-41.008c-11.386-6.88-41.761-27.207-51.576-37.507m-46.687-91.01c-6.657-14.265-.695-27.9 3.908-48.505c-28.639-1.798-53.129 12.179-62.936 21.986c-8.493-7.591-35.77-25.673-55.227-23.775c2.373 17.104 2.924 42.882-.337 64.083c29.025 10.75 89.025 7.865 114.592-13.79M322.664 0C459.136 0 569.77 111.758 569.77 249.618S459.137 499.236 322.663 499.236c-44.84 0-81.022-7.918-114.019-26.703l-57.592 28.796c9.81-13.172 14.49-34.13 13.06-60.046c-1.816-32.87-13.053-69.149-30.83-99.535c-14.274-24.397-30.087-42.884-47.001-54.949c-14.199-10.127-28.77-15.537-43.354-16.115l32.695-16.347C74.508 107.31 186.19 0 322.663 0M204.718 123.029c13.584 30.697 56.317 52.802 103.366 52.802c72.56 0 112.527-27.46 111.876-73.63c-36.29-28.876-94.102 7.63-94.102 7.63s-62.58-49.982-114.207 6.124c0 0-2.62 2.292-6.933 7.074m-48.775 104.83c-2.322 35.272 9.951 70.012 42.399 93.471c-3.78 38.384 12.581 80.624 61.196 93.485c26.59-31.294 40.936-83.212 2.146-139.038c-30.693-44.172-72.56-53.439-105.74-47.918m344.955 20.72c-4.099-2.766-8.336-5.577-12.51-8.082c-50.151-30.09-94.182 1.46-122.751 49.293c-24.573 41.143-28.94 102.638-11.108 130.129c4.488-.43 9.076-.965 13.75-1.618c90.371-12.626 76.365-93.167 76.365-93.167c43.715-20.541 57.668-48.375 56.254-76.554" />
+            </svg>
+            <b style="font-weight: unset;">CAD Designing & Analysis</b>
+          </h6><button id="servicebtn1" onclick="sliderChange(1)"></button>
+        </span>
+        <span style="--i:6;" id="service2" class="services">
+          <h6 class="label6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                <path d="m12 12l7 7m17 17l-7-7m7-17l-7 7M12 36l7-7" />
+                <path fill="currentColor" d="M19 19h10v10H19z" />
+                <path d="M36 19a7 7 0 1 0-7-7m7 17a7 7 0 1 1-7 7m-17-7a7 7 0 1 0 7 7m-7-17a7 7 0 1 1 7-7" />
+              </g>
+            </svg>
+            <b style="font-weight: unset;">Drone Technologies</b>
+          </h6><button id="servicebtn2"></button>
+        </span>
+        <span style="--i:7;" id="service3" class="services">
+          <h6 class="label7">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h10.5v-3.5H4zm12.5 0H20V9h-3.5zM4 12.5h10.5V9H4z" />
+            </svg>
+            <b style="font-weight: unset;">Web Development</b>
+          </h6><button id="servicebtn3"></button>
+        </span>
+        <span style="--i:8;" id="service4" class="services">
+          <h6 class="label8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <g fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M14 6h-4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1m-4-2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3z"
+                  clip-rule="evenodd" />
+                <path
+                  d="m6 7.46l-2.507-.418A3 3 0 0 0 0 10v4.917a3 3 0 0 0 3.493 2.96L6 17.458v-2.027l-2.836.472A1 1 0 0 1 2 14.918v-4.917a1 1 0 0 1 1.164-.987L6 9.487zm12 0l2.507-.418A3 3 0 0 1 24 10v4.917a3 3 0 0 1-3.493 2.96L18 17.458v-2.027l2.836.472A1 1 0 0 0 22 14.918v-4.917a1 1 0 0 0-1.164-.987L18 9.487z" />
+              </g>
+            </svg>
+            <b style="font-weight: unset;">UI/Ux Design</b>
+          </h6><button id="servicebtn4"></button>
+        </span>
+        <span style="--i:9;" id="service5" class="services">
+          <h6 class="label9">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M3.32.954S2.388.78 2.388 2.138c0 1.359.222 18.01.222 18.01s.379.663.521.631c.141-.03 2.546-.358 2.577-.363l.017-.002l.013-4.004l.012-3.9l4.259-.001l-.004-.305l-4.254-.054l.005-1.616l5.04.057l.012-.322l-5.05-.117l.017-6.148s-.056-.673.354-.673s10.856.377 10.856.377s.343.012.354.257c.005.107.003 3.4.004 5.959l-1.068.114l.002.315l-4.215-.062l-.006.338l4.244.058l.005 1.535l-2.39.017l-.002.296l2.377-.023l.003.235h1.053c0 1.01.002 1.713 0 2.43c.542.158 1.385.435 1.385.435l-1.403.21c0 .223.002.572.005.923l-.93-.35l-.654.083l1.585.589l.003.367l2.072-.291l-.007-14.759s.01-.546-.564-.564C18.263 1.803 3.32.954 3.32.954m6.26 8.662l-.005.55l1.303.032l-.03.869l-.79-.02l.021 1.8l.284-.03l.007.35l.969.03v.566a.034.034 0 0 1 .033.033v.013l.238.12a.033.033 0 0 1 .016.014a.033.033 0 0 1 .002.02a.029.029 0 0 1-.002.006l.417.12l-.02-2.048a.067.067 0 0 1 .016-.018c.02 0 1.736-.007 1.736-.018l.002-.947l-1.796.013l.03-1.331zm4.193 2.474l-1.618.017l.02 1.91l1.598-.044zm-2.434 1.706l-.158.157l.21.21l.205-.204l-.257-.13zm2.425.405c-.029 0-7.873.896-7.873.896l3.197 1.718l9.556-1.209s-4.85-1.405-4.88-1.405m-7.923.925l.01.495l.217.113l.618.02l2.121 1.164l-.257.186l.412.288l1.308-.113l.33-.186l6.293-.793l.36.062l-.03-.515l-8.168 1.04zm.649 1.283l-.706.02l-.01 4.002l.84-.176l-.037-.932l3.276 2.488s-.026.453.03.87c.057.417.613.37.613.37l1.293-.277l.2-.242l7.957-1.525l.212.206l1.158-.247c.119-.026.211-.2.273-.314c.062-.113-.024-1.802-.005-2.333c.016-.445-.08-.425-.129-.438l-.757.134s-.208.057-.314.01c-.174-.076-.154-.205-.154-.205s.01-.222-.067-.469c-.077-.247-.258-.211-.258-.211l-7.08.994s-.372.058-.695.14l-1.802-.99l-.041.023a.033.033 0 0 1-.014.004l-.526.046l2.018 1.065c-.003.007-.037.009-.038.016c-.097.882-.202.989-.463 1.03l-1.385.195l-3.08-2.111Z" />
+            </svg>
+            <b style="font-weight: unset;">3D Printing</b>
+          </h6><button id="servicebtn5"></button>
+        </span>
+        <span style="--i:10;"><button disabled style="display: none;"></button></span>
+        <div class="hidder">
+          <div>
+            <h3 id="serviceheading">Web Development</h3>
+            <p id="servicedetails">
+              ecommerce websites
+              personal websites
+              portfolio websites
+              business websites
+              landing pages
+              & more
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="letstalk" class="d-flex text-center">
+    <div class="container mb-5">
+      <div class="section-head">
+        <h2 class="head2 mb-3">Let's Talk</h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          <form class="row g-3" id="submit-form" action="" onclick="submit_form();">
+
+            <h6 class="head6">Let us know you first..</h6>
+            <div class="form-group col-lg-6">
+              <input type="text" name="name" class="form-inp col-12" placeholder="Name*" id="name" required>
+            </div>
+            <div class="form-group col-lg-6">
+              <input id="mobile" type="tel" name="mobile" class="form-inp col-12" placeholder="Mobile*" required>
+            </div>
+            <div class="form-group col-lg-12">
+              <input id="email" type="email" name="email" class="form-inp col-12" placeholder="Email*" required>
+            </div>
+            <h6 class="head6 mt-5">I'm interested in..</h6>
+            <div class="form-group col-lg-12">
+              <fieldset>
+                <input type="radio" class="btn btn-check" name="option" value="Web Development" id="option1"
+                  autocomplete="off">
+                <label class="btn m-2" style="background-color: #fff;" for="option1">Web Development</label>
+                <input type="radio" class="btn-check" name="option" id="option2" value="UI/UX" autocomplete="off">
+                <label class="btn m-2" style="background-color: #fff;" for="option2">UI/UX</label>
+                <input type="radio" class="btn-check" name="option" id="option3" value="Drone Technology"
+                  autocomplete="off">
+                <label class="btn m-2" style="background-color: #fff;" for="option3">Drone Technology</label>
+                <input type="radio" class="btn-check m-1" name="option" id="option4" value="CAD" autocomplete="off">
+                <label class="btn m-2" style="background-color: #fff;" for="option4">CAD Design and Analysis</label>
+                <input type="radio" class="btn-check m-1" name="option" id="option5" value="3D Printing"
+                  autocomplete="off">
+                <label class="btn m-2" style="background-color: #fff;" for="option5">3D Printing</label>
+              </fieldset>
+            </div>
+
+            <h6 class="head6 mt-5">Tell us all the things about your project</h6>
+            <div class="form-group col-lg-12">
+              <textarea name="message" rows="5" class="form-inp col-12" id="message"
+                placeholder="Hi StackatroniX, My project is.." required></textarea>
+            </div>
+            <div class="form-group col-lg-12 d-grid">
+              <button class="anchors btn" id="btn-bg-clr" type="submit">Send Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-start mt-4" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6 px-4 mb-4">
+            <div class="logo"><img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX"></div>
+            <h6 class="mt-2"><a href="mailto:enquiry.stackatronix@gmail.com" class="contact-links"><span
+                  class="ic--baseline-mail"></span>enquiry.stackatronix@gmail.com</a></h6>
+            <h6><a href="tel:8137886588" class="contact-links"><span class="solar--phone-bold"></span>+91 8137 886
+                588</a></h6>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <h5 class="head5 fs-5">Services</h5>
+            <ul class="footer-service">
+              <li>Web Development</li>
+              <li>UI/UX</li>
+              <li>Drone Technology</li>
+              <li>CAD Design and Analysis</li>
+              <li>3D Printing</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-4">
+            <h5 class="head5 fs-5">Socials</h5>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/stackatronix_tech?igsh=dTVpNzE3dzN3bHA5"><span
+                  class="line-md--instagram"></span></a>
+              <a href="https://github.com/Stackatronix"><span class="line-md--github-loop"></span></a>
+            </div>
+          </div>
+          <div class="col-12 px-4">
+            <p>© Copyright 2024 StackatroniX Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 </body>
 
 <script>
-    $("#submit-form").submit((e) => {
-        e.preventDefault();
-        $.ajax({
-          url: "https://formsubmit.co/ajax/enquiry.stackatronix@gmail.com",
-          data: $("#submit-form").serialize(),
-          method: "post",
-          success: function (response) {
-            $('#successModal').modal('show');
+  $("#submit-form").submit((e) => {
+    e.preventDefault();
+    $.ajax({
+      url: "https://formsubmit.co/ajax/enquiry.stackatronix@gmail.com",
+      data: $("#submit-form").serialize(),
+      method: "post",
+      success: function (response) {
+        $('#successModal').modal('show');
 
-            $('#successModal .close').on('click', function() {
-              // Reload the page
-              window.location.reload();
-            });
-            
-            //reset the form
-            $("#submit-form").trigger('reset');
-          },
-          error: function (err) {
-            alert("Something Went Wrong!! Please refresh the page and try again.");
-          }
+        $('#successModal .close').on('click', function () {
+          // Reload the page
+          window.location.reload();
         });
-      });
+
+        //reset the form
+        $("#submit-form").trigger('reset');
+      },
+      error: function (err) {
+        alert("Something Went Wrong!! Please refresh the page and try again.");
+      }
+    });
+  });
 </script>
 
 <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
 <script>
-    
-var sliderSelected = 3;
-window.onload = (event) => {
-  sliderChange(3)
-};
 
-function sliderChange(params) {
-  if (params == 1) {
-    document.getElementsByClassName("imagebox")[0].classList.add("image1")
-    document.getElementById("serviceheading").innerText = "CAD Designing & Analysis"
-    document.getElementById("servicedetails").innerText = `2d and 3d modelling
+  var sliderSelected = 5;
+  window.onload = (event) => {
+    sliderChange(5)
+  };
+
+  function sliderChange(params) {
+    if (params == 5) {
+      document.getElementsByClassName("imagebox")[0].classList.add("image1")
+      document.getElementById("serviceheading").innerText = `CAD Designing &
+       Analysis`
+      document.getElementById("servicedetails").innerText = `2d and 3d modelling
     Software trainings - catia, 
     solidworks`;
-    // selected buttons
-    selectedButtonStyle("servicebtn1");
-    // other buttons
-    otherButtonStyle("servicebtn1", "image1");
-  }
-  else if (params == 2) {
-    document.getElementsByClassName("imagebox")[0].classList.add("image2")
-    document.getElementById("serviceheading").innerText = "Drone Technologies"
-    document.getElementById("servicedetails").innerText = `Quadcopter assembly, 
+      // selected buttons
+      selectedButtonStyle("servicebtn1");
+      // other buttons
+      otherButtonStyle("servicebtn1", "image1");
+    }
+    else if (params == 6 || params == 4) {
+      document.getElementsByClassName("imagebox")[0].classList.add("image2")
+      document.getElementById("serviceheading").innerText = "Drone Technologies"
+      document.getElementById("servicedetails").innerText = `Quadcopter assembly, 
     autonomous drones, 
     software services, 
     Project assistance 
     & More`;
-    // selected buttons
-    selectedButtonStyle("servicebtn2");
-    // other buttons
-    otherButtonStyle("servicebtn2", "image2");
-  }
-  else if (params == 3) {
-    document.getElementsByClassName("imagebox")[0].classList.add("image3")
-    document.getElementById("serviceheading").innerText = "Web Development"
-    document.getElementById("servicedetails").innerText = `ecommerce websites
+      // selected buttons
+      selectedButtonStyle("servicebtn2");
+      // other buttons
+      otherButtonStyle("servicebtn2", "image2");
+    }
+    else if (params == 7) {
+      document.getElementsByClassName("imagebox")[0].classList.add("image3")
+      document.getElementById("serviceheading").innerText = "Web Development"
+      document.getElementById("servicedetails").innerText = `ecommerce websites
     personal websites
     portfolio websites
     business websites
     landing pages
     & more`;
-    // selected buttons
-    selectedButtonStyle("servicebtn3");
-    // other buttons
-    otherButtonStyle("servicebtn3", "image3");
-    var h = document.getElementsByClassName("imagebox")[0].classList
-  }
-  else if (params == 4) {
-    document.getElementsByClassName("imagebox")[0].classList.add("image4")
-    document.getElementById("serviceheading").innerText = "UI/UX Designing"
-    document.getElementById("servicedetails").innerText = `Design Inspirations,
+      // selected buttons
+      selectedButtonStyle("servicebtn3");
+      // other buttons
+      otherButtonStyle("servicebtn3", "image3");
+    }
+    else if (params == 8) {
+      document.getElementsByClassName("imagebox")[0].classList.add("image4")
+      document.getElementById("serviceheading").innerText = "UI/UX Designing"
+      document.getElementById("servicedetails").innerText = `Design Inspirations,
     Prototypes,
     & More`;
-    // selected buttons
-    selectedButtonStyle("servicebtn4");
-    // other buttons
-    otherButtonStyle("servicebtn4", "image4");
-  }
-  else if (params == 5) {
-    document.getElementsByClassName("imagebox")[0].classList.add("image5")
-    document.getElementById("serviceheading").innerText = "3D Printing"
-    document.getElementById("servicedetails").innerText = `Designing
+      // selected buttons
+      selectedButtonStyle("servicebtn4");
+      // other buttons
+      otherButtonStyle("servicebtn4", "image4");
+    }
+    else if (params == 9) {
+      document.getElementsByClassName("imagebox")[0].classList.add("image5")
+      document.getElementById("serviceheading").innerText = "3D Printing"
+      document.getElementById("servicedetails").innerText = `Designing
     Software assistance
     Printing`;
-    // selected buttons
-    selectedButtonStyle("servicebtn5");
-    // other buttons
-    otherButtonStyle("servicebtn5", "image5");
+      // selected buttons
+      selectedButtonStyle("servicebtn5");
+      // other buttons
+      otherButtonStyle("servicebtn5", "image5");
+    }
   }
-}
 
-function selectedButtonStyle(btn) {
-  // buttons
-  document.getElementById(btn).style.height = "10px"
-  document.getElementById(btn).style.width = "40px"
-  document.getElementById(btn).style.opacity = "100%"
-  document.getElementById(btn).style.backgroundColor = "#373760"
+  function selectedButtonStyle(btn) {
+    // buttons
+    document.getElementById(btn).style.height = "10px"
+    document.getElementById(btn).style.width = "40px"
+    document.getElementById(btn).style.opacity = "100%"
+    document.getElementById(btn).style.backgroundColor = "#373760"
+  }
 
-  var h = document.getElementsByClassName("semicircle")[0]
+  function otherButtonStyle(btn, img) {
+    var otherButtons = [
+      'servicebtn1',
+      'servicebtn2',
+      'servicebtn3',
+      'servicebtn4',
+      'servicebtn5'
+    ]
 
-}
+    var otherimages = [
+      'image1',
+      'image2',
+      'image3',
+      'image4',
+      'image5'
+    ]
 
-function otherButtonStyle(btn, img) {
-  var otherButtons = [
-    'servicebtn1',
-    'servicebtn2',
-    'servicebtn3',
-    'servicebtn4',
-    'servicebtn5'
-  ]
+    otherButtons.splice(otherButtons.indexOf(btn), 1)
+    otherimages.splice(otherimages.indexOf(img), 1)
+    // buttons
+    otherButtons.forEach(element => {
+      document.getElementById(element).style.height = "7px"
+      document.getElementById(element).style.width = "30px"
+      document.getElementById(element).style.opacity = "90%"
+      document.getElementById(element).style.backgroundColor = "gray"
+    });
+    // images
+    otherimages.forEach(element => {
+      document.getElementsByClassName("imagebox")[0].classList.remove(element)
+    });
 
-  var otherimages = [
-    'image1',
-    'image2',
-    'image3',
-    'image4',
-    'image5'
-  ]
+  }
+  var isScrolled = false;
+  var checkerMoble = 1.6
+  var startY = 0;
 
-  otherButtons.splice(otherButtons.indexOf(btn), 1)
-  otherimages.splice(otherimages.indexOf(img), 1)
-  // buttons
-  otherButtons.forEach(element => {
-    document.getElementById(element).style.height = "7px"
-    document.getElementById(element).style.width = "30px"
-    document.getElementById(element).style.opacity = "90%"
-    document.getElementById(element).style.backgroundColor = "gray"
+  document.addEventListener('touchstart', function (e) {
+    startY = e.touches[0].clientY;
   });
-  // images
-  otherimages.forEach(element => {
-    document.getElementsByClassName("imagebox")[0].classList.remove(element)
-  });
+  document.getElementsByClassName("semicircle")[0].addEventListener("wheel",
+    function (event) {
+      checker = event.deltaY * 0.043;
+      ScrollDetector(checker)
+      event.preventDefault();
+    }, false);
 
-}
 
-document.getElementsByClassName("semicircle")[0].addEventListener("wheel", 
-function (event) {
-  checker = event.deltaY * 0.05;
-  ScrollDetector(checker)
-},false);
-document.getElementsByClassName("semicircle")[0].addEventListener("touchmove", function (event) {
-  checker = event.changedTouches[0].screenY * 0.005
-  ScrollDetector(checker)
-},false);
+  document.getElementsByClassName("semicircle")[0].addEventListener("touchmove", function (event) {
+    if (!isScrolled) {
+      var currentY = event.touches[0].clientY;
 
-function ScrollDetector(checker) {
-  console.log(checker);
-  var serviceElements = [
-    "service1",
-    "service2",
-    "service3",
-    "service4",
-    "service5",
-  ]
-  
-  console.log(checker);
-  if (checker <= -1.5) {
-    serviceElements.forEach(element => {
-      var i = document.getElementById(element).style.getPropertyValue('--i')
-      if (i == 5) {
-        i = 1;
+      // Calculate the difference between current and start Y positions
+      var deltaY = currentY - startY;
+      isScrolled = true
+
+      if (deltaY > 0) {
+        checkerMoble = -1.6
       }
       else {
-        i++;
+        checkerMoble = 1.6
+
       }
-      document.getElementById(element).style.setProperty('--i', i)
-      document.getElementById(element).childNodes[1].classList = "";
-      document.getElementById(element).childNodes[1].classList.add(`label${i}`);
-    });
-    if (sliderSelected == 1) {
-      sliderSelected = 5;
-    } else {
-      sliderSelected--;
+
+      ScrollDetector(checkerMoble)
+      setTimeout(() => {
+        isScrolled = false
+      }, 500);
     }
-    sliderChange(sliderSelected);
-  } else if (checker >= 1.5) {
-    serviceElements.forEach(element => {
-      var i = document.getElementById(element).style.getPropertyValue('--i')
-      if (i == 1) {
-        i = 5;
+    var scrollEnabler = document.getElementsByClassName("services")
+    console.log(checkerMoble);
+    if (checkerMoble > 0) {
+      if (scrollEnabler[4].childNodes[1].classList[0] == "label5") {
+
+      } else {
+        event.preventDefault();
       }
-      else {
-        i--;
-      }
-      document.getElementById(element).style.setProperty('--i', i)
-      document.getElementById(element).childNodes[1].classList = "";
-      document.getElementById(element).childNodes[1].classList.add(`label${i}`);
-    });
-    if (sliderSelected == 5) {
-      sliderSelected = 1;
-    } else {
-      sliderSelected++;
     }
-    sliderChange(sliderSelected);
+    else if (checkerMoble < 0) {
+      if (scrollEnabler[0].childNodes[1].classList[0] == "label5") {
+
+      } else {
+        event.preventDefault();
+      }
+
+    }
+  }, false);
+
+  function ScrollDetector(checker) {
+    console.log(checker);
+    var serviceElements = [
+      "service1",
+      "service2",
+      "service3",
+      "service4",
+      "service5",
+    ]
+
+    if (checker <= -1.5) {
+      serviceElements.forEach(element => {
+        var i = document.getElementById(element).style.getPropertyValue('--i')
+        var innertextOfFirstNode = document.getElementById(element).childNodes[1].childNodes[3].innerText
+        if (innertextOfFirstNode == "CAD Designing & Analysis" && i == 5 || innertextOfFirstNode == "Drone Technologies" && i == 6 ||
+          innertextOfFirstNode == "Web Development" && i == 7 || innertextOfFirstNode == "UI/Ux Design" && i == 8 || innertextOfFirstNode == "3D Printing" && i == 9) {
+
+        }
+        else {
+          i++;
+          document.getElementById(element).style.setProperty('--i', i)
+          document.getElementById(element).childNodes[1].classList = "";
+          document.getElementById(element).childNodes[1].classList.add(`label${i}`);
+        }
+      });
+      if (sliderSelected == 5) {
+        // sliderSelected = 5;
+      } else {
+        sliderSelected--;
+      }
+      sliderChange(sliderSelected);
+    } else if (checker >= 1.5) {
+      serviceElements.forEach(element => {
+        var i = document.getElementById(element).style.getPropertyValue('--i')
+        var innertextOfFirstNode = document.getElementById(element).childNodes[1].childNodes[3].innerText
+        if (innertextOfFirstNode == "3D Printing" && i == 5 || innertextOfFirstNode == "CAD Designing & Analysis" && i == 1 || innertextOfFirstNode == "Drone Technologies" && i == 2
+          || innertextOfFirstNode == "Web Development" && i == 3 || innertextOfFirstNode == "UI/Ux Design" && i == 4) {
+          // i = 5;
+        }
+        else {
+          i--;
+          document.getElementById(element).style.setProperty('--i', i)
+          document.getElementById(element).childNodes[1].classList = "";
+          document.getElementById(element).childNodes[1].classList.add(`label${i}`);
+        }
+      });
+      if (sliderSelected == 9) {
+        // sliderSelected = 1;
+      } else {
+        sliderSelected++;
+      }
+      sliderChange(sliderSelected);
+    }
   }
-  event.preventDefault();
-}
-    $('.nav-link').on('click',function(){
-        $(".navbar-collapse").removeClass("show");
-      })
+  $('.nav-link').on('click', function () {
+    $(".navbar-collapse").removeClass("show");
+  })
 
 </script>
+
 </html>

@@ -70,7 +70,7 @@
       margin-left: 3px;
       position: absolute;
       inset: -45px;
-      transform: rotate(calc(-30deg * var(--i)));
+      transform: rotate(calc(-18deg * var(--i)));
       z-index: 1;
       transition: transform 0.3s ease;
     }
@@ -103,6 +103,7 @@
       top: 0;
       left: 1px;
       padding: 10px;
+      color: #373760;
     }
 
     .hidder div {
@@ -115,25 +116,48 @@
 
     .ranger span h6 {
       position: relative;
-      transform: rotate(calc(30deg * var(--i)));
-      color: gray;
-      opacity: 50%;
-      font-weight: 400;
+      transform: rotate(calc(18deg * var(--i)));
     }
 
     .label1 {
-      left: -100px;
-      top: -30px;
+      left: -150px;
+      top: -20px;
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
     }
 
     .label2 {
-      left: -50px;
-      top: -65px;
+      left: -130px;
+      top: -50px;
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
     }
 
     .label3 {
-      left: 0px;
+      left: -85px;
+      top: -75px;
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
+    }
+
+    .label4 {
+      left: -40px;
       top: -100px;
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
+    }
+
+    .label5 {
+      left: 0px;
+      top: -110px;
       opacity: 90%;
       font-weight: 600;
       font-size: 19px;
@@ -141,17 +165,43 @@
       animation: animlabels 0.3s ease-in-out alternate;
     }
 
-    .label4 {
-      left: 50px;
-      top: -65px;
+    .label6 {
+      left: 40px;
+      top: -95px;
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
     }
 
-    .label5 {
+    .label7 {
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
       left: 70px;
-      top: -30px;
+      top: -90px;
     }
 
-    @media only screen and (max-width: 992px) {
+    .label8 {
+      left: 80px;
+      top: -60px;
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
+    }
+
+    .label9 {
+      left: 90px;
+      top: -30px;
+      opacity: 50%;
+      font-weight: 400;
+      font-size: 19px;
+      color: gray;
+    }
+
+    /* @media only screen and (max-width: 992px) {
       .imagebox {
         display: none;
       }
@@ -181,7 +231,9 @@
 
       #serviceheading {
         font-size: 17px;
+        font-weight: 700;
       }
+
       .label1 {
         left: -70px;
         top: -20px;
@@ -207,7 +259,7 @@
         left: 45px;
         top: -15px;
       }
-    }
+    } */
 
     @media only screen and (max-width: 630px) {
       .imagebox {
@@ -215,10 +267,12 @@
       }
 
       .semicircle {
-        left: 40%;
-        height: 300px;
-        width: 300px;
-        border-radius: 150px 150px 150px 150px;
+        left: 50%;
+        height: 370px;
+        width: 370px;
+        border-radius: 185px 185px 185px 185x;
+        transform: scale(1.2);
+        margin-top: 50px;
       }
 
       h6 b {
@@ -226,20 +280,25 @@
       }
 
       .ranger span {
-        margin-left: 17px;
+        margin-left: -10px;
+        inset: -40px;
       }
 
       .hidder {
-        height: 300px;
-        width: 300px;
-        border-radius: 150px 150px 150px 150px;
+        height: 370px;
+        width: 370px;
+        border-radius: 185px 185px 185px 185x;
         left: 1px;
-        font-size: 10px;
-        padding-left: 50px;
+        font-size: 12px;
+        justify-content: center;
+        text-align: left;
+        padding-left: 35%;
       }
+
       #serviceheading {
-        font-size: 15px;
+        font-size: 18px;
       }
+
       .label1 {
         left: -10px;
         top: 0px;
@@ -253,7 +312,6 @@
       .label3 {
         left: 0px;
         top: 0px;
-        font-size: 14px;
       }
 
       .label4 {
@@ -262,6 +320,31 @@
       }
 
       .label5 {
+        left: -10px;
+        top: 0px;
+      }
+
+      .label6 {
+        left: -10px;
+        top: 0px;
+      }
+
+      .label7 {
+        left: -10px;
+        top: 0px;
+      }
+
+      .label8 {
+        left: 0px;
+        top: 0px;
+      }
+
+      .label9 {
+        left: -10px;
+        top: 0px;
+      }
+
+      .label10 {
         left: -10px;
         top: 0px;
       }
