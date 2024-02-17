@@ -76,7 +76,7 @@
 
   <section id="home" class="min-vh-100 d-flex align-items-center text-center">
     <video src="assets/media/bg-vdo.mp4" muted autoplay loop class="bg-video"></video>
-    <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video"></video>
+    <!-- <video src="assets/media/bg-vdo.webm" muted autoplay loop class="bg-video"></video> -->
 
     <div class="container-fluid">
       <div class="row">
@@ -136,7 +136,9 @@
   </section>
 
   <section class="row container-fluid mb-5" id="services" style="text-align: center; margin-top: 40px;">
-    <h1 class="col-12 my-5" style="font-weight: 700;">What We Provide</h1>
+    <div class="section-head">
+      <h2 class="head2">Our Services</h2>
+    </div>
     <div class="col-lg-4 imagebox">
     </div>
     <div class="semicircle col-lg-7">
@@ -205,7 +207,7 @@
           <div>
             <h3 id="serviceheading"></h3>
             <p id="servicedetails">
-              
+
             </p>
           </div>
         </div>
@@ -221,13 +223,13 @@
       <div class="row">
         <div class="col-12">
 
-          <form class="row g-3" id="submit-form" action="" onclick="submit_form();">
+          <form class="row g-3 px-5" id="submit-form" action="" onclick="submit_form();">
 
             <h6 class="head6">Let us know you first..</h6>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 d-flex">
               <input type="text" name="name" class="form-inp col-12" placeholder="Name*" id="name" required>
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 d-flex">
               <input id="mobile" type="tel" name="mobile" class="form-inp col-12" placeholder="Mobile*" required>
             </div>
             <div class="form-group col-lg-12">
@@ -258,7 +260,7 @@
                 placeholder="Hi StackatroniX, My project is.." required></textarea>
             </div>
             <div class="form-group col-lg-12 d-grid">
-              <button class="anchors btn" id="btn-bg-clr" type="submit">Send Request</button>
+              <button class="anchors btn p-2" id="btn-bg-clr" type="submit">Send Request</button>
             </div>
           </form>
         </div>
@@ -410,9 +412,9 @@
     document.getElementById(btn).style.opacity = "100%"
     document.getElementById(btn).style.backgroundColor = "#373760"
     if (window.innerWidth <= 630) {
-        document.getElementById(btn).style.height = "7px"
-        document.getElementById(btn).style.width = "25px"     
-      }
+      document.getElementById(btn).style.height = "7px"
+      document.getElementById(btn).style.width = "25px"
+    }
   }
 
   function otherButtonStyle(btn, img) {
@@ -440,10 +442,10 @@
       document.getElementById(element).style.width = "30px"
       document.getElementById(element).style.opacity = "90%"
       document.getElementById(element).style.backgroundColor = "gray"
-      
+
       if (window.innerWidth <= 630) {
         document.getElementById(element).style.height = "3px"
-        document.getElementById(element).style.width = "15px"     
+        document.getElementById(element).style.width = "15px"
       }
     });
     // images
