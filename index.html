@@ -20,7 +20,45 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
   <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg  sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/media/stack-logo.png" class="logo-img" alt="StackatroniX">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- changed -->
+            <img src="./assets/media/burger-bar.png" alt="" width="32">
+            <!-- changed -->
+        </button>
+    </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-3 active ">
+                    <!-- #changed -->
+                    <a class="nav-link btn btn-link underline" style="display: flex; justify-content:flex-start;"href="#home">Home</a>
+                    <!-- changed -->
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
+                        href="#projects">Projects</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
+                        href="#services">Services</a>
+                </li>
 
+                <li class="nav-item mx-3">
+                    <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
+                        href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="#letstalk" class="btn btn-primary ms-lg-3 talk" id="btn-bg-clr">Let's Talk</a>
+        
+    </div>
+</nav>
+
+<!-- 
   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -53,7 +91,7 @@
       <a href="#letstalk" class="btn btn-primary ms-lg-3 talk" id="btn-bg-clr">Let's Talk</a>
 
     </div>
-  </nav>
+  </nav> -->
 
   <!-- Bootstrap Modal -->
   <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
