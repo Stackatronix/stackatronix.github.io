@@ -1,4 +1,4 @@
-var url = "https://wa.me/918078968851?text=";
+var url = "https://wa.me/918281772071?text=";
 
 function send() {
     var msg = url +
