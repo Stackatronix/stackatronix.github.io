@@ -1,0 +1,27 @@
+#maintainence *{
+    font-family: 'Figtree';
+    letter-spacing: 0.5px;
+}
+#maintenance{
+    gap: 20px;
+}
+#maintenance-section{
+    background: radial-gradient(circle,#F7F7FF, #FAFAFF);
+}
+.btn-contact{
+    background-color: #B41735;
+    color: #F7F7FF;
+}
+#maintainence-text,#Contact h3{
+    color: #2D2D2D;
+    font-weight: bolder;
+}
+#Contact h5,svg{
+    margin-bottom: 0;
+    line-height: 1.5;
+    vertical-align:middle;
+    color: #373760;
+}
+#Contact{
+    gap: 12px;
+}
