@@ -31,7 +31,7 @@ body{
 .service{
     background: radial-gradient(circle,#F7F7FF, #FAFAFF);
 }
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .row.d-flex {
         flex-direction: column;
         align-items: center;
