@@ -1,21 +1,21 @@
-/* FONT */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* VARIABLES */
 :root {
   --font-dark: #2d2d2d;
   --font-light: #fff;
-  --brand-color-primary: #B41735;
-  --brand-color-primary-light: #bc6071;
+  --brand-color-primary: #174eb4;
+  --brand-color-primary-light: #6660bc;
   --brand-color-secondary: #373760;
   --brand-color-secondary-light: #6c6c96;
   --bg-rgb-1: 245, 245, 245;
   --bg-rgb-2: 247, 247, 255;
-  --bg-rgb-3: 241,241,241;
+  --bg-rgb-3: 241, 241, 241;
   --bg-rgb-dark: 55, 55, 96;
   --box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.08);
   --transition: all 0.5s ease;
-  --font-style: 'Figtree', sans-serif;
+  --font-style: 'Urbanist', sans-serif;
 }
 
 
@@ -35,7 +35,7 @@
   mask-size: 100% 100%;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -216,12 +216,12 @@ body{
   color: var(--brand-color-secondary);
 }
 
-li{
+li {
   list-style: none;
   margin-left: -0.3em;
 }
 
-.talk{
-  white-space:pre;
-  margin-right:20px !important;
+.talk {
+  white-space: pre;
+  margin-right: 20px !important;
 }
