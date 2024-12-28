@@ -239,9 +239,14 @@ section {
 
     #section4 h1 {
         margin-bottom: 30px;
+        margin-left: unset;
     }
     .servicecard {
         margin-block: 20px;
+    }
+
+    .tapered-line-hotizontal {
+        display: none;
     }
 
 }
