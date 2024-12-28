@@ -1,0 +1,93 @@
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Applying blur to create a foggy effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow for visibility */
+  }
+
+.navheading {
+    font-weight: 300;
+    font-family: "Urbanist", serif;
+    margin-inline: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#Section1 {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.6), rgb(255, 255, 255)),
+        url('./../media/1SecBg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+}
+
+.blur-gradient {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    /* background: conic-gradient(rgb(255, 255, 255) 0deg 70deg,
+            rgba(95, 188, 255, 0.6) 70deg 200deg,
+            rgba(57, 167, 255, 0.7) 200deg 360deg); */
+    background: conic-gradient(rgba(57, 167, 255, 0.9) 0deg 160deg,
+            rgba(95, 188, 255, 0.6) 160deg 300deg,
+            rgb(255, 255, 255) 300deg 360deg);
+    filter: blur(100px);
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    position: absolute; /* Absolute positioning relative to the parent */
+    top: 70%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    max-width: 90vw; /* Prevents content from extending too wide */
+    color: black;
+    text-align: center; /* Centers the text */
+}
+
+.content h1 {
+    font-size: 65px; /* Adjust the font size */
+    background: linear-gradient(to right, #000000,#000000,#ffffff, #ffffff,#000000,#000000); /* Gradient colors */
+    -webkit-background-clip: text; /* Required for the gradient to show through the text */
+    background-clip: text; /* Standard property (but not supported in all browsers) */
+    color: transparent; /* Makes the text itself transparent so the gradient shows */
+    font-family: "Urbanist", serif;
+    font-weight: 600;
+    line-height: 0.8;
+    margin-block: 15px;
+}
+
+.content p{
+      font-family: "Urbanist", serif;
+      font-weight: 400;
+    }
+    
+.content a {
+    margin-top: 20px;
+    font-family: "Urbanist", serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(48, 55, 62, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.content a:hover {
+    color: #ffffff; /* Color when the link is hovered (for example, tomato color) */
+    background: radial-gradient(circle, rgba(48, 55, 62, 1) 0%, rgb(0, 0, 0) 50%, rgba(48, 55, 62, 1) 100%);
+}
