@@ -12,7 +12,7 @@
     color: black;
 }
 
-section {
+section{
     margin-top: 7rem;
 }
 
@@ -78,7 +78,7 @@ section {
     font-weight: 400;
 }
 
-.content a {
+.getquoteBtn {
     margin-top: 20px;
     font-family: "Urbanist", serif;
     font-weight: 600;
@@ -89,7 +89,7 @@ section {
     padding-inline: 22px;
 }
 
-.content a:hover {
+.getquoteBtn:hover {
     color: #ffffff;
     background: radial-gradient(circle, rgba(48, 55, 62, 1) 0%, rgb(0, 0, 0) 50%, rgba(48, 55, 62, 1) 100%);
 }
@@ -174,7 +174,7 @@ section {
     margin-top: 160px;
 }
 
-#section4 h1 {
+.our-headings {
     font-family: "Urbanist", serif;
     font-weight: 700;
     font-size: 60px;
@@ -182,7 +182,7 @@ section {
     margin-left: 60px;
 }
 
-#section4 h1 span {
+.our-headings span {
     color: rgba(57, 167, 255, 1);
 }
 
@@ -219,8 +219,51 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
+#section5 {
+    margin: 5rem;
+    margin-top: 10rem;
+}
+
+#section5 h1 {
+    background: radial-gradient(circle, rgba(45, 45, 45, 1), rgba(208, 241, 249, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: "Urbanist", serif;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 0.77;
+}
+
+#section5 p{
+    font-family: "Urbanist", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#section6{
+    margin-top: 150px;
+}
+
+.Client-logo{
+    height: 100px;
+}
+
+#section7{
+    margin-top: 7rem;
+}
+
 /* smaller devices */
 @media (max-width: 992px) {
+    .dis-none{
+        display: none;
+    }
+
+    .blur-gradient {
+        width: 250px;
+        height: 250px;
+    }
+
     .content h1 {
         font-size: 35px;
     }
@@ -233,11 +276,7 @@ section {
         font-size: 14px;
     }
 
-    .tapered-line-vertical {
-        display: none;
-    }
-
-    #section4 h1 {
+    .our-headings {
         margin-bottom: 30px;
         margin-left: unset;
     }
@@ -247,6 +286,16 @@ section {
 
     .tapered-line-hotizontal {
         display: none;
+    }
+
+    #section5 {
+        margin: unset;
+        margin-top: 10rem;
+    }
+
+    .Client-logo{
+        height: 150px;
+        margin-block: 40px;
     }
 
 }
