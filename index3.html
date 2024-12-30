@@ -170,87 +170,66 @@
     <img src="./assets/media/Hint-logo.png" class="col-12 col-lg-3 Client-logo">
   </section>
 
-  <section id="section7" class="container">
-      <div class="section">
-          <div class="left-part">
-              <h2>Transforming Businesses with
-                Cutting-Edge Solutions</h2>
-              <p>At Stackatronics, we deliver cutting-edge software solutions designed to help businesses optimize operations, boost productivity, and reach their goals with ease. Explore how our services can revolutionize your business today.</p>
-              <button>View More ></button>
-          </div>
-          <div class="right-part">
-              <div class="image-container active" data-aos="fade-up">
-                  <img src="./assets/media/img1.jpg" alt="Image 1">
-              </div>
-              <div class="image-container" data-aos="fade-up">
-                  <img src="./assets/media/img2.jpg" alt="Image 2">
-              </div>
-              <div class="image-container" data-aos="fade-up">
-                  <img src="./assets/media/img3.jpg" alt="Image 3">
-              </div>
-          </div>
+  <section id="section7" class="container-fluid">
+    <div class="left-part">
+      <h2>Transforming Businesses with
+        Cutting-Edge Solutions</h2>
+      <p>At Stackatronics, we deliver cutting-edge software solutions designed to help businesses optimize operations,
+        boost productivity, and reach their goals with ease. Explore how our services can revolutionize your business
+        today.</p>
+        <a href="#" class="btn getquoteBtn">View More  
+          <img src="./assets/Icons/SVG.png" alt="Icon" width="20" height="20">
+        </a>
+    </div>
+    <div class="right-part">
+      <div class="image-container active" data-aos="fade-up">
+        <img src="./assets/media/img1.jpg" alt="Image 1">
       </div>
-    </section>
+      <div class="image-container" data-aos="fade-up">
+        <img src="./assets/media/img2.jpg" alt="Image 2">
+      </div>
+      <div class="image-container" data-aos="fade-up">
+        <img src="./assets/media/img3.jpg" alt="Image 3">
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <div class="container contact-section">
-      <div class="row">
-          <!-- Left Column for Text -->
-          <div class="col-md-6 contact-text">
-              <h2>Contact Our</h2>
-              <h2>Friendly Team</h2>
-              <p>+91 8137 88 65 88</p>
-              <p>stackatronix@gmail.com</p>
-          </div>
-  
-          <!-- Right Column for Form -->
-          <div class="col-md-6">
-              <div class="contact-form">
-                  <form>
-                      <div class="mb-3">
-                          <label for="name" class="form-label">Full Name</label>
-                          <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-                      </div>
-                      <div class="mb-3">
-                          <label for="email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="email" placeholder="Enter your email address">
-                      </div>
-                      <div class="mb-3">
-                          <label for="message" class="form-label">Message</label>
-                          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Send Message</button>
-                  </form>
-              </div>
-          </div>
+  <div class="container contact-section">
+    <div class="row">
+      <!-- Left Column for Text -->
+      <div class="col-md-6 contact-text">
+        <h2>Contact Our</h2>
+        <h2>Friendly Team</h2>
+        <p>+91 8137 88 65 88</p>
+        <p>stackatronix@gmail.com</p>
       </div>
+
+      <!-- Right Column for Form -->
+      <div class="col-md-6">
+        <div class="contact-form">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <footer>
     <p>stackatronix 2025</p>
   </footer>
 </body>
-<script>
-  AOS.init();
 
-  // Handle scroll event to change images
-  window.addEventListener('scroll', function() {
-      const imageContainers = document.querySelectorAll('.image-container');
-      const scrollTop = window.scrollY + window.innerHeight / 2;
-
-      let activeIndex = -1;
-
-      imageContainers.forEach((container, index) => {
-          const containerTop = container.offsetTop;
-          const containerBottom = containerTop + container.clientHeight;
-
-          if (scrollTop >= containerTop && scrollTop < containerBottom) {
-              activeIndex = index;
-          }
-      });
-
-      if (activeIndex !== -1) {
-          document.querySelector('.image-container.active').classList.remove('active');
-          imageContainers[activeIndex].classList.add('active');
-      }
-  });
-</script>
 </html>
