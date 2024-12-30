@@ -172,7 +172,7 @@
 
   <section id="section7" class="container">
     <div class="row">
-      <div class="col-lg-6 col-12 left-part">
+      <div class="col-lg-6 col-12 left-part mb-5">
         <h2>Transforming Businesses with
           Cutting-Edge Solutions</h2>
         <p>At Stackatronics, we deliver cutting-edge software solutions designed to help businesses optimize operations,
@@ -182,23 +182,11 @@
           <img src="./assets/Icons/SVG.png" alt="Icon" width="20" height="20">
         </button>
       </div>
-      <!-- <div class="right-part col-lg-6 col-12">
-        <div class="image-container active" data-aos="fade-up">
-          <img src="./assets/media/img1.jpg" alt="Image 1" width="500px">
-        </div>
-        <div class="image-container" data-aos="fade-up">
-          <img src="./assets/media/img2.jpg" alt="Image 2" width="500px">
-        </div>
-        <div class="image-container" data-aos="fade-up">
-          <img src="./assets/media/img3.jpg" alt="Image 3" width="500px">
-        </div>
-      </div> -->
       <div class="slider-container col-lg-6 col-12" id="slider-container">
         <div class="slider-images" id="slider-images">
-          <img src="./assets/media/img1.jpg" alt="Image 1">
+          <img src="./assets/media/img1.jpg" alt="Image 1" class="display-none-opps">
           <img src="./assets/media/img2.jpg" alt="Image 2" class="display-none">
           <img src="./assets/media/img3.jpg" alt="Image 3" class="display-none">
-          <img src="./assets/media/1SecBg.jpg" alt="Image 4" width="500px" class="display-none">
         </div>
       </div>
     </div>
@@ -241,18 +229,42 @@
   </footer>
 
   <script>
-    const sliderContainer = document.getElementById('slider-container');
+    const sliderContainer = document.getElementById('section7');
     const sliderImages = document.getElementById('slider-images');
 
     let scrollPosition = 0;
     let isScrolling = false;
-    const scrollDelay = 1000; // Delay in ms between scroll events
+    const scrollDelay = 700; // Delay in ms between scroll events
+    var isInitialScroll = true;
+    var checkerMoble = 1.6
+    var startY = 0;
 
     sliderContainer.addEventListener('wheel', function (e) {
-      if (scrollPosition < sliderImages.children.length) {
-        e.preventDefault();
+      if (isInitialScroll) {
+        e.preventDefault()
       }
+      SliderControl(e, e.deltaY);
+    });
 
+    sliderContainer.addEventListener('touchstart', function (e) {
+      startY = e.touches[0].clientY;
+    });
+
+    sliderContainer.addEventListener('touchmove', function (e) {
+      var temdeltay = event.touches[0].clientY - startY;
+      if (temdeltay > 0) {
+        checkerMoble = -1.6
+      }
+      else {
+        checkerMoble = 1.6
+      }
+      if (isInitialScroll) {
+        e.preventDefault()
+      }
+      SliderControl(e, checkerMoble);
+    });
+
+    function SliderControl(e, deltaY) {
       if (isScrolling) return; // Prevent multiple scrolls at once
       isScrolling = true;
 
@@ -260,12 +272,19 @@
         isScrolling = false; // Allow scrolling again after delay
       }, scrollDelay);
 
-      if (e.deltaY > 1.5) {
+      console.log(deltaY);
+
+      if (deltaY > 1.5) {
         scrollPosition += 1; // Scroll down
       } else {
         scrollPosition -= 1; // Scroll up
       }
 
+      if (scrollPosition >= sliderImages.children.length || scrollPosition < 0) {
+        isInitialScroll = false;
+      } else {
+        isInitialScroll = true
+      }
       // Bound the scroll position between 0 and the number of images minus one
       if (scrollPosition < 0) scrollPosition = 0;
       if (scrollPosition > sliderImages.children.length) {
@@ -274,20 +293,25 @@
       } else if (scrollPosition == sliderImages.children.length) {
         return
       }
+      if (scrollPosition < 0) {
+        return
+      }
 
       sliderImages.children[scrollPosition].classList.remove('display-none')
       if (!sliderImages.children[scrollPosition].classList.contains('display-none')) {
         sliderImages.children[scrollPosition].classList.add('display-none-opps');
       }
       var allElementsExceptCurrent = Array.from(sliderImages.children).filter((_, index) => index !== scrollPosition);
-      allElementsExceptCurrent.forEach(element => {
+      for (let i = 0; i < allElementsExceptCurrent.length; i++) {
+        const element = allElementsExceptCurrent[i];
         if (!element.classList.contains('display-none')) {
           element.classList.add('display-none');
         }
-        element.classList.remove('display-none-opps')
-      });
-      sliderImages.style.transform = `translateY(-${scrollPosition * 100}vh)`;
-    });
+        element.classList.remove('display-none-opps');
+      }
+      // sliderImages.style.transform = `translateY(-${scrollPosition * 100}vh)`;
+
+    }
   </script>
 </body>
 

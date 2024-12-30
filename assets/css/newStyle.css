@@ -261,20 +261,25 @@ section{
 .slider-images {
     display: flex;
     flex-direction: column;
-    transition: transform 0.5s ease-in-out;
 }
 
-.display-none{
-    border-radius: 100px;
-    /* display: none; */
-    width: 1px;
-    height: 1px;
+/* Hide the element by animating its width to 0, and apply opacity and transform */
+.display-none {
+    opacity: 0;
+    transform: translateY(-20px); /* Or use other transformations like translateX */
+    pointer-events: none; /* Prevent interaction while hidden */
+    width: 0; /* Start with width 0 to hide */
+    transition: width 0.5s ease, opacity 0.5s ease, transform 0.5s ease; 
 }
 
-.display-none-opps{
-    width: unset;
-    height: unset;
+/* Show the element by resetting width, opacity, and transform */
+.display-none-opps {
+    opacity: 1;
+    transform: translateY(0); /* Reset to original position */
+    pointer-events: auto; /* Enable interaction */
+    width: 100%; /* Set the width to 100% or a specific value */
 }
+
 /* slider section working */
 
 /* smaller devices */
