@@ -5,213 +5,290 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stackatronix</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/service.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
-  <link href="assets/css/maintainence.css" rel="stylesheet">
+  <link href="assets/css/newStyle.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="assets/media/stxtech.png" alt="" width="170" height="30" class="d-inline-block align-text-top">
-        <a href="#letstalk" class="btn btn-contact">Contact us</a>
+        <img src="./assets/media/logoclumsy.png" alt="Logo" width="210" height="40"
+          class="d-inline-block align-text-top">
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        </ul>
+        <div class="d-flex" role="search">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link active navheading" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navheading" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
-  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-success" id="successModalLabel">Success!</h5>
-        </div>
-        <div class="modal-body">
-          Thank you for contacting StackatroniX. You will receive the reply in a while.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-light close" data-dismiss="modal" aria-label="Close"
-            id="btn-bg-clr">Close</button>
-        </div>
-      </div>
+  <section id="Section1" class="container-fluid row">
+    <div class="col-12 m-3"></div>
+    <div class="blur-gradient">
     </div>
-  </div>
-  <section class="min-vh-100 d-flex align-items-center text-center" id="maintenance-section">
-    <div class="col-12 d-flex justify-content-center align-items-center flex-column" id="maintenance">
-      <img src="assets/media/maintenance.svg" width="80px" alt="" class="img-fluid">
-      <h1 id="maintainence-text">Site Under Maintenance!</h1>
-      <div id="Contact" class="col-12 d-flex justify-content-center align-items-center flex-column">
-        <h3 id="contact-head">Contact Info</h3>
-        <div id="Contact-Email" class="d-flex justify-content-center align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-envelope"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-          </svg>
-          <h5 class="ms-2">info.stackatronix@gmail.com</h5>
+    <div class="content">
+      <h1>Empower business with <br> modern technology solutions</h1>
+      <p>Stackatronix is a leading technology company specializing in <br>
+        providing innovative software solutions and IT services</p>
+      <a href="#" class="btn getquoteBtn">Get a quote
+        <img src="./assets/Icons/SVG.png" alt="Icon" width="20" height="20">
+      </a>
+    </div>
+  </section>
+  <section id="section2" class="container d-flex justify-content-center align-items-center">
+    <div class="row">
+      <h6 class="col-12 text-center">IN NUMBER</h6>
+      <h4 class="col-12 text-center mb-5">At Stackatronix, we specialize in delivering <span>innovative software</span>
+        <br>solutions and IT services designed to empower businesses.
+      </h4>
+      <div class="tapered-line-hotizontal col-12 text-center"></div>
+      <div class="col-2"></div>
+      <div class="col-10 row text-center my-5" style="width: 70%;">
+        <div class="col-1 text-center dis-none"></div>
+        <div class="col-lg-3 col-12 mb-5 text-center row">
+          <h1 class="col-12">2+</h1>
+          <p class="col-12">Years of Experience</p>
         </div>
-
-        <div class="d-flex justify-content-center align-items-center" id="Contact-Phone">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-telephone"
-            viewBox="0 0 16 16">
-            <path
-              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-          </svg>
-          <h5 class="ms-2">+91 8137886588</h5>
+        <div class="tapered-line-vertical dis-none col-1 text-center"></div>
+        <div class="col-lg-3 col-12 mb-5 text-center row">
+          <h1 class="col-12">50+</h1>
+          <p class="col-12">Completion of Projects</p>
         </div>
-
+        <div class="tapered-line-vertical dis-none col-1 text-center"></div>
+        <div class="col-lg-3 col-12 mb-5 text-center row">
+          <h1 class="col-12">30%</h1>
+          <p class="col-12">Increase in Productivity</p>
+        </div>
       </div>
     </div>
   </section>
-  <section class="container-fluid">
-    <div class="col-12 row d-flex justify-content-center align-items-center container-fluid">
-      <div class="card col-12 col-lg-3 m-3 p-4 text-center d-flex justify-content-center align-items-center service"
-        style="width: 350px; height: 350px;">
-        <img class="card-img-top" src="assets/media/web_dev.png" style="width: 100px;" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Web Development</h5>
-          <p class="card-text">we specialize in crafting modern, responsive, and user-friendly websites tailored to your
-            unique business needs.</p>
+  <section id="section3" class="container d-flex justify-content-center align-items-center">
+    <div class="row" style="width: 80%;">
+      <h2 class="col-12 text-center">Creative Solutions for Your <span>Business Challenges</span></h2>
+      <div class="col-lg-4 col-12 text-center">
+        <div class="cardBackground">
+          <img src="./assets/Icons/cardIcon1.png" width="130" height="130" style="margin-block: 50px;">
+          <h3>Understanding Your <br>Business Goals</h3>
+          <p>Understanding of your business goals.<br>We start by gaining a deep.</p>
         </div>
       </div>
-
-      <div class="card col-12 col-lg-3 m-3 p-4 text-center d-flex justify-content-center align-items-center service"
-        style="width: 350px; height: 350px;">
-        <img class="card-img-top" src="assets/media/ui_1260111.png" style="width: 100px;" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">UI/UX Designing</h5>
-          <p class="card-text">Transform your digital experience with our UI/UX design. We craft intuitive and engaging
-            interfaces to ensure your website or app is visually appealing and user-friendly.</p>
+      <div class="col-lg-4 col-12 text-center">
+        <div class="cardBackground">
+          <img src="./assets/Icons/cardicon2.png" width="130" height="130" style="margin-block: 50px;">
+          <h3>Developing Tailored <br>Solutions</h3>
+          <p>Next, our team of experts develops<br>tailored solutions.</p>
         </div>
       </div>
-
-      <div class="card col-12 col-lg-3 m-3 p-4 text-center d-flex justify-content-center align-items-center service"
-        style="width: 350px; height: 350px;">
-        <img class="card-img-top" src="assets/media/DA.png" style="width: 100px;" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Data analytics</h5>
-          <p class="card-text">Unlock valuable insights with our end-to-end data analytics solutions.</p>
-        </div>
-      </div>
-
-      <div class="card col-12 col-lg-3 m-3 p-4 text-center d-flex justify-content-center align-items-center service"
-        style="width: 350px; height: 350px;">
-        <img class="card-img-top" src="assets/media/artificial-intelligence_4616790.png" style="width: 100px;"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Artificial Intelligence / Machine Learning</h5>
-          <p class="card-text">Unlock the power of artificial intelligence and machine learning with our cutting-edge
-            solutions.</p>
-        </div>
-      </div>
-
-      <div class="card col-12 col-lg-3 m-3 p-4 text-center d-flex justify-content-center align-items-center service"
-        style="width: 350px; height: 350px;">
-        <img class="card-img-top" src="assets/media/seo_4693059.png" style="width: 100px;" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">SEO</h5>
-          <p class="card-text">Boost your online visibility and attract more organic traffic with our expert SEO
-            services.</p>
-        </div>
-      </div>
-
-      <div class="card col-12 col-lg-3 m-3 p-4 text-center d-flex justify-content-center align-items-center service"
-        style="width: 350px; height: 350px;">
-        <img class="card-img-top" src="assets/media/bullhorn_1997928.png" style="width: 100px;" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Digital Marketing</h5>
-          <p class="card-text">Transform your digital experience with our UI/UX design. We craft intuitive and engaging
-            interfaces to ensure your website or app is visually appealing and user-friendly.</p>
+      <div class="col-lg-4 col-12 text-center">
+        <div class="cardBackground">
+          <img src="./assets/Icons/cardIcon3.png" width="130" height="130" style="margin-block: 50px;">
+          <h3>Implementing <br>Technology</h3>
+          <p>We leverage cutting-edge technology<br>to implement seamlessly.</p>
         </div>
       </div>
     </div>
-
   </section>
-  <section id="letstalk" class="d-flex text-center">
-    <div class="container mb-5">
-      <div class="section-head">
-        <h2 class="head2 mb-3">Let's Talk</h2>
+  <section id="section4" class="container-fluid row">
+    <h1 class="col-lg-3 col-12 our-headings">Our <br><span>Services</span></h1>
+    <div class="col-lg-8 col-11 row ms-4">
+      <div class="col-lg-5 servicecard row" style="margin-right: 10px;">
+        <div class="col-7"></div>
+        <img src="./assets/media/gg_website.png" class="col-5" style="margin: 0; padding: 0;">
+        <h2>Web<br>Development</h2>
+        <p>Modern, Responsive, and User-Friendly<br>
+          websites tailored to your unique business needs.</p>
       </div>
-      <div class="row">
-        <div class="col-12">
+      <div class="col-lg-5 servicecard row">
+        <div class="col-7"></div>
+        <img src="./assets/media/gg_website.png" class="col-5" style="margin: 0; padding: 0;">
+        <h2>UI/UX <br>Designs</h2>
+        <p>Intuitive and engaging interfaces to ensure your <br>website or app is visually appealing and user-friendly.
+        </p>
+      </div>
+      <div class="col-lg-5 servicecard row">
+        <div class="col-7"></div>
+        <img src="./assets/media/carbon_data-analytics.png" class="col-5" style="margin: 0; padding: 0;">
+        <h2>Data <br>Analytics</h2>
+        <p>Unlock valuable insights with our end-to-end <br>data analytics solutions.</p>
+      </div>
+      <div class="col-lg-5 servicecard row">
+        <div class="col-7"></div>
+        <img src="./assets/media/Vector.png" class="col-5" style="padding: 0;">
+        <h2>AI/ML</h2>
+        <p>Unlock the power of Artificial Intelligence and <br>Machine Learning with our cutting-edge solutions.</p>
+      </div>
+    </div>
+  </section>
+  <section id="section5" class="container row">
+    <h1 class="col-lg-6 col-12 text-center">Got a<br>project in<br>mind<br>Contact<br>Us</h1>
+    <div class="col-lg-6 col-12 row my-5">
+      <div class="col-lg-3 col-2" style="margin-bottom: 0; height: 10px;"></div>
+      <a href="#" class="col-2 col-lg-1 mx-lg-2 mt-5"><img src="./assets/Icons/github.png" width="40px"
+          height="40px"></a>
+      <a href="#" class="col-2 col-lg-1 mx-lg-2 mt-5"><img src="./assets/Icons/linkedin.png" width="40px"
+          height="40px"></a>
+      <a href="#" class="col-2 col-lg-1 mx-lg-2 mt-5"><img src="./assets/Icons/insta.png" width="40px"
+          height="40px"></a>
+      <a href="#" class="col-2 col-lg-1 mx-lg-2 mt-5"><img src="./assets/Icons/X-icon.png" width="40px"
+          height="40px"></a>
+      <p class="col-12 d-flex justify-content-center align-items-center mt-4">&nbsp;&nbsp;&nbsp;&nbsp; +91 8137 88 65 88
+        <br> &nbsp;&nbsp;&nbsp;&nbsp; +91 7025 35 77 15 <br> stackatronix@gmail.com
+      </p>
+      <div class="col-lg-4 col-3"></div>
+      <a href="#" class="btn getquoteBtn col-lg-4 col-6">Get a quote
+        <img src="./assets/Icons/SVG.png" alt="Icon" width="20" height="20">
+      </a>
+      <div class="col-lg-4 col-3"></div>
+    </div>
+  </section>
+  <section id="section6" class="container-fluid row">
+    <h1 class="col-12 col-lg-4 our-headings">Our<br><span>Clients</span></h1>
+    <img src="./assets/media/MR-logo.png" class="col-12 col-lg-2 Client-logo">
+    <img src="./assets/media/asquare_logo.png" class="col-12 col-lg-2 Client-logo">
+    <img src="./assets/media/Hint-logo.png" class="col-12 col-lg-3 Client-logo">
+  </section>
 
-          <form class="row g-3 px-5" id="submit-form" action="" onclick="submit_form();">
+  <section id="section7" class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12 left-part">
+        <h2>Transforming Businesses with
+          Cutting-Edge Solutions</h2>
+        <p>At Stackatronics, we deliver cutting-edge software solutions designed to help businesses optimize operations,
+          boost productivity, and reach their goals with ease. Explore how our services can revolutionize your business
+          today.</p>
+        <button class="btn getquoteBtn" onclick="hi()">View More
+          <img src="./assets/Icons/SVG.png" alt="Icon" width="20" height="20">
+        </button>
+      </div>
+      <!-- <div class="right-part col-lg-6 col-12">
+        <div class="image-container active" data-aos="fade-up">
+          <img src="./assets/media/img1.jpg" alt="Image 1" width="500px">
+        </div>
+        <div class="image-container" data-aos="fade-up">
+          <img src="./assets/media/img2.jpg" alt="Image 2" width="500px">
+        </div>
+        <div class="image-container" data-aos="fade-up">
+          <img src="./assets/media/img3.jpg" alt="Image 3" width="500px">
+        </div>
+      </div> -->
+      <div class="slider-container col-lg-6 col-12" id="slider-container">
+        <div class="slider-images" id="slider-images">
+          <img src="./assets/media/img1.jpg" alt="Image 1">
+          <img src="./assets/media/img2.jpg" alt="Image 2" class="display-none">
+          <img src="./assets/media/img3.jpg" alt="Image 3" class="display-none">
+          <img src="./assets/media/1SecBg.jpg" alt="Image 4" width="500px" class="display-none">
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <h6 class="head6">Let us know you first..</h6>
-            <div class="form-group col-lg-6 d-flex">
-              <input type="text" name="name" class="form-inp col-12" placeholder="Name*" id="name" required>
-            </div>
-            <div class="form-group col-lg-6 d-flex">
-              <input id="mobile" type="tel" name="mobile" class="form-inp col-12" placeholder="Mobile*" required>
-            </div>
-            <div class="form-group col-lg-12">
-              <input id="email" type="email" name="email" class="form-inp col-12" placeholder="Email*" required>
-            </div>
-            <h6 class="head6 mt-5">I'm interested in..</h6>
-            <div class="form-group col-lg-12">
-              <fieldset>
-                <input type="radio" class="btn btn-check" name="option" value="Web Development" id="option1"
-                  autocomplete="off">
-                <label class="btn m-2" style="background-color: #fff;" for="option1">Web Development</label>
-                <input type="radio" class="btn-check" name="option" id="option2" value="UI/UX" autocomplete="off">
-                <label class="btn m-2" style="background-color: #fff;" for="option2">UI/UX</label>
-                <input type="radio" class="btn-check" name="option" id="option3" value="Data Analytics"
-                  autocomplete="off">
-                <label class="btn m-2" style="background-color: #fff;" for="option3">Data Analytics</label>
-                <input type="radio" class="btn-check m-1" name="option" id="option4"
-                  value="Artificial Intelligence / Machine Learning" autocomplete="off">
-                <label class="btn m-2" style="background-color: #fff;" for="option4">AI/ ML</label>
-                <input type="radio" class="btn-check m-1" name="option" id="option5" value="SEO" autocomplete="off">
-                <label class="btn m-2" style="background-color: #fff;" for="option6">SEO</label>
-                <input type="radio" class="btn-check m-1" name="option" id="option6" value="Digital Marketing"
-                  autocomplete="off">
-                <label class="btn m-2" style="background-color: #fff;" for="option6">Digital Marketing</label>
-              </fieldset>
-            </div>
+  <section class="container contact-section">
+    <div class="row">
+      <!-- Left Column for Text -->
+      <div class="col-md-6 contact-text">
+        <h2>Contact Our</h2>
+        <h2>Friendly Team</h2>
+        <p>+91 8137 88 65 88</p>
+        <p>stackatronix@gmail.com</p>
+      </div>
 
-            <h6 class="head6 mt-5">Tell us all the things about your project</h6>
-            <div class="form-group col-lg-12">
-              <textarea name="message" rows="5" class="form-inp col-12" id="message"
-                placeholder="Hi StackatroniX, My project is.." required></textarea>
+      <!-- Right Column for Form -->
+      <div class="col-md-6">
+        <div class="contact-form">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name">
             </div>
-            <div class="form-group col-lg-12 d-grid">
-              <button class="anchors btn p-2" id="btn-bg-clr" type="submit">Send Request</button>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address">
             </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>
       </div>
     </div>
   </section>
-</body>
-<script>
-  $("#submit-form").submit((e) => {
-    e.preventDefault();
-    $.ajax({
-      url: "https://formsubmit.co/ajax/info.stackatronix@gmail.com",
-      data: $("#submit-form").serialize(),
-      method: "post",
-      success: function (response) {
-        $('#successModal').modal('show');
+  <footer>
+    <p>stackatronix 2025</p>
+  </footer>
 
-        $('#successModal .close').on('click', function () {
-          // Reload the page
-          window.location.reload();
-        });
+  <script>
+    const sliderContainer = document.getElementById('slider-container');
+    const sliderImages = document.getElementById('slider-images');
 
-        //reset the form
-        $("#submit-form").trigger('reset');
-      },
-      error: function (err) {
-        alert("Something Went Wrong!! Please refresh the page and try again.");
+    let scrollPosition = 0;
+    let isScrolling = false;
+    const scrollDelay = 1000; // Delay in ms between scroll events
+
+    sliderContainer.addEventListener('wheel', function (e) {
+      if (scrollPosition < sliderImages.children.length) {
+        e.preventDefault();
       }
+
+      if (isScrolling) return; // Prevent multiple scrolls at once
+      isScrolling = true;
+
+      setTimeout(() => {
+        isScrolling = false; // Allow scrolling again after delay
+      }, scrollDelay);
+
+      if (e.deltaY > 1.5) {
+        scrollPosition += 1; // Scroll down
+      } else {
+        scrollPosition -= 1; // Scroll up
+      }
+
+      // Bound the scroll position between 0 and the number of images minus one
+      if (scrollPosition < 0) scrollPosition = 0;
+      if (scrollPosition > sliderImages.children.length) {
+        scrollPosition = sliderImages.children.length - 1;
+        return
+      } else if (scrollPosition == sliderImages.children.length) {
+        return
+      }
+
+      sliderImages.children[scrollPosition].classList.remove('display-none')
+      if (!sliderImages.children[scrollPosition].classList.contains('display-none')) {
+        sliderImages.children[scrollPosition].classList.add('display-none-opps');
+      }
+      var allElementsExceptCurrent = Array.from(sliderImages.children).filter((_, index) => index !== scrollPosition);
+      allElementsExceptCurrent.forEach(element => {
+        if (!element.classList.contains('display-none')) {
+          element.classList.add('display-none');
+        }
+        element.classList.remove('display-none-opps')
+      });
+      sliderImages.style.transform = `translateY(-${scrollPosition * 100}vh)`;
     });
-  });
-</script>
+  </script>
+</body>
 
 </html>

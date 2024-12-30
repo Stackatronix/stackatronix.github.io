@@ -253,6 +253,30 @@ section{
     margin-top: 7rem;
 }
 
+/* slider section working */
+.slider-container {
+    overflow-y: scroll;
+}
+
+.slider-images {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+.display-none{
+    border-radius: 100px;
+    /* display: none; */
+    width: 1px;
+    height: 1px;
+}
+
+.display-none-opps{
+    width: unset;
+    height: unset;
+}
+/* slider section working */
+
 /* smaller devices */
 @media (max-width: 992px) {
     .dis-none{
@@ -300,7 +324,7 @@ section{
 
 }
 
-#section7 {
+/* #section7 {
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -310,7 +334,7 @@ section{
 .left-part {
     width: 40%;
     padding: 20px;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
     height: fit-content;
@@ -328,4 +352,4 @@ section{
 }
 .image-container.active {
     display: flex;
-}
+} */
