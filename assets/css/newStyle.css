@@ -328,12 +328,12 @@ label {
 
     .content h1 {
         font-size: 45px;
-        padding-top: 3em;
+        padding-top: 4em;
     }
 
     .content p {
         padding-top: 2em;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #number h4 {
@@ -341,12 +341,14 @@ label {
     }
 
     .innumber{
-        margin-top: 10em;
+        margin-top: 12em;
     }
 
     .our-headings {
         margin-bottom: 30px;
         margin-left: unset;
+        font-size: 50px;
+        padding-left: 0.45em;
     }
 
     .servicecard {
@@ -373,10 +375,6 @@ label {
         padding: 0.5em;
         margin-top: 2em;
         margin-bottom: 4em;
-    }
-
-    .our-headings{
-        padding-left: 0.1em;
     }
 
 }
