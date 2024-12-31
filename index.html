@@ -36,13 +36,13 @@
         <div class="d-flex" role="search">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
             <li class="nav-item">
-              <a class="nav-link active navheading" href="#">Services</a>
+              <a class="nav-link active navheading" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navheading" href="#">Works</a>
+              <a class="nav-link navheading" href="#works">Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navheading" href="#">Contact</a>
+              <a class="nav-link navheading" href="#contactus">Contact</a>
             </li>
           </ul>
         </div>
@@ -144,7 +144,7 @@
         <h2>Graphic<br>Designs</h2>
         <p>Unlock valuable insights with our end-to-end <br>data analytics solutions.</p>
       </div>
-      
+
       <div class="col-lg-5 servicecard row">
         <div class="col-7"></div>
         <img src="./assets/media/Vector.png" class="col-5" style="padding: 0;">
@@ -184,12 +184,13 @@
   </section>
   <section id="clients" class="container-fluid row">
     <h1 class="col-12 col-lg-4 our-headings">Our<br><span>Clients</span></h1>
-    <img src="./assets/media/MR-logo.png" class="col-12 col-lg-2 Client-logo">
-    <img src="./assets/media/premium-burgers.png" class="col-12 col-lg-2 Client-logo">
-    <!-- <img src="./assets/media/asquare_logo.png" class="col-12 col-lg-2 Client-logo"> -->
-    <img src="./assets/media/Hint-logo.png" class="col-12 col-lg-2 Client-logo" id="hintlogo">
+    <div class="col-lg-7 col-12 text-center">
+      <img src="./assets/media/MR-logo.png" class="col-12 col-lg-3 Client-logo">
+      <img src="./assets/media/premium-burgers.png" class="col-12 col-lg-3 Client-logo">
+      <!-- <img src="./assets/media/asquare_logo.png" class="col-12 col-lg-2 Client-logo"> -->
+      <img src="./assets/media/Hint-logo.png" class="col-12 col-lg-3 Client-logo" id="hintlogo">
+    </div>
   </section>
-
   <section id="works" class="container">
     <div class="row">
       <div class="col-lg-6 col-12 left-part mb-5">
@@ -212,7 +213,6 @@
       </div>
     </div>
   </section>
-
   <section id=contactus class="container contact-section">
     <div class="row">
       <!-- Left Column for Text -->
@@ -231,7 +231,7 @@
       <div class="col-md-6">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <form class="row g-3 p-lg-3 p-2 bg-white form-box">
+            <form class="row g-3 p-lg-3 p-2 bg-white form-box" action="https://formsubmit.co/info.stackatronix@gmail.com" method="POST">
               <div class="form-group col-lg-6 m-0">
                 <label>Full Name</label>
                 <input type="text" name="name" class="form-control" placeholder="stx" id="name" required>
@@ -251,8 +251,7 @@
                   placeholder="Description about your project" required></textarea>
               </div>
               <div class="form-group col-lg-12 m-0">
-                <a href="#" class="btn getquoteBtn col-lg-12 col-12">Send Message
-                </a>
+                <button class="btn getquoteBtn col-lg-12 col-12" type="submit">Send Message</button>
               </div>
             </form>
           </div>
@@ -267,14 +266,6 @@
         <p class="p-2 pb-1">
           stackatronix &copy; 2025</p>
       </div>
-
-
-      <!-- Navigation Links
-      <div class="navigation col-4 text-center mt-2 mb-0">
-        <a href="#" class="p-2 pb-1">Home</a><a href="#" class="p-2 pb-1">Works</a><a href="#"
-          class="p-2 pb-1">Services</a>
-      </div> -->
-
       <div class="icons col-6 d-flex justify-content-end mb-0">
         <a href="#" class="p-2 pb-1"><img src="./assets/Icons/github.png" width="20px" height="20px"></a>
         <a href="#" class="p-2 pb-1"><img src="./assets/Icons/linkedin.png" width="20px" height="20px"></a>
@@ -282,12 +273,11 @@
         <a href="#" class="p-2 pb-1"><img src="./assets/Icons/X-icon.png" width="20px" height="20px"></a>
       </div>
     </div>
-
-
   </footer>
 
   <script>
-    const sliderContainer = document.getElementById('works');
+    const sliderContainer = document.getElementById('slider-container');
+    const worksContainer = document.getElementById('works');
     const sliderImages = document.getElementById('slider-images');
 
     let scrollPosition = 0;
@@ -297,7 +287,7 @@
     var checkerMoble = 1.6
     var startY = 0;
 
-    sliderContainer.addEventListener('wheel', function (e) {
+    worksContainer.addEventListener('wheel', function (e) {
       if (isInitialScroll) {
         e.preventDefault()
       }
