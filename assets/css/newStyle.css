@@ -132,14 +132,14 @@ section{
     color: rgba(57, 167, 255, 1);
 }
 
-#section2 p {
+#section2 p, #section7 p{
     font-family: "Inter", serif;
     font-weight: 300;
     font-size: 13px;
     color: rgba(23, 23, 23, 1);
 }
 
-#section3 h2 {
+#section3 h2, #section7 h2 {
     background: radial-gradient(circle at top right, rgba(17, 17, 17, 1), rgba(45, 45, 45, 1), rgba(57, 167, 255, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -235,7 +235,7 @@ section{
     line-height: 0.77;
 }
 
-#section5 p{
+#section5 p, #section8 p{
     font-family: "Urbanist", serif;
     font-weight: 400;
     font-size: 20px;
