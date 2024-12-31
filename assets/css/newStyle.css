@@ -328,7 +328,7 @@ label {
 
     .content h1 {
         font-size: 45px;
-        padding-top: 2em;
+        padding-top: 3em;
     }
 
     .content p {
@@ -376,7 +376,7 @@ label {
     }
 
     .our-headings{
-        padding-left: 0.2em;
+        padding-left: 0.1em;
     }
 
 }
