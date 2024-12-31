@@ -12,7 +12,7 @@
     color: black;
 }
 
-section{
+section {
     margin-top: 7rem;
 }
 
@@ -132,14 +132,17 @@ section{
     color: rgba(57, 167, 255, 1);
 }
 
-#number p, #works p, .copyright{
+#number p,
+#works p,
+.copyright {
     font-family: "Inter", serif;
     font-weight: 300;
     font-size: 13px;
     color: rgba(23, 23, 23, 1);
 }
 
-#challenges h2, #works h2 {
+#challenges h2,
+#works h2 {
     background: radial-gradient(circle at top right, rgba(17, 17, 17, 1), rgba(45, 45, 45, 1), rgba(57, 167, 255, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -181,13 +184,14 @@ section{
     line-height: 0.8;
     margin-left: 60px;
 }
-#contactus{
-    margin:0;
+
+#contactus {
+    margin: 0;
     margin-top: 8em;
 }
 
 
-#contactus p{
+#contactus p {
     font-family: "Urbanist", serif;
     font-weight: bold;
     font-size: larger;
@@ -200,13 +204,15 @@ section{
 .servicecard {
     background: conic-gradient(from 135deg,
             rgba(208, 241, 249, 0.05) 0%,
-            rgba(208, 241, 249, 0.05) 33%, /* Transition to new foggy color */
-            rgba(160, 200, 255, 0.1) 33%, /* New foggy color starts */
-            rgba(160, 200, 255, 0.1) 66%, /* New foggy color ends */
+            rgba(208, 241, 249, 0.05) 33%,
+            /* Transition to new foggy color */
+            rgba(160, 200, 255, 0.1) 33%,
+            /* New foggy color starts */
+            rgba(160, 200, 255, 0.1) 66%,
+            /* New foggy color ends */
             rgba(57, 167, 255, 0.05) 66%,
-            rgba(57, 167, 255, 0.05) 100%
-        );
-    border-radius: 20px ;
+            rgba(57, 167, 255, 0.05) 100%);
+    border-radius: 20px;
     padding: 0;
     margin: 5px;
     border: rgba(57, 167, 255, 0.05) solid 1px;
@@ -216,16 +222,17 @@ section{
     font-family: "Urbanist", serif;
     font-weight: 500;
     font-size: 40px;
-    background: linear-gradient(135deg, rgba(45, 45, 45, 1),rgba(45, 45, 45, 1), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(135deg, rgba(45, 45, 45, 1), rgba(45, 45, 45, 1), rgba(255, 255, 255, 0.3));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.servicecard p , label{
+.servicecard p,
+label {
     font-family: "Urbanist", serif;
     font-weight: 400;
     font-size: 12px;
-    background: linear-gradient(135deg, rgba(45, 45, 45, 1),rgba(45, 45, 45, 1), rgba(255, 255, 255, 0.725));
+    background: linear-gradient(135deg, rgba(45, 45, 45, 1), rgba(45, 45, 45, 1), rgba(255, 255, 255, 0.725));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -252,27 +259,28 @@ section{
     line-height: 0.77;
 }
 
-#quote p{
+#quote p {
     font-family: "Urbanist", serif;
     font-weight: 400;
     font-size: 20px;
 }
 
-#clients{
+#clients {
     margin-top: 150px;
 }
 
-.Client-logo{
-    height: 80px;
-    width: auto;
+.Client-logo {
+    /* height: 80px;
+    width: auto; */
+    margin-inline: 20px;
 }
 
-#hintlogo{
+#hintlogo {
     height: 60px;
     margin: 0.5em;
 }
 
-#works{
+#works {
     margin-top: 7rem;
     padding: 1em;
 }
@@ -291,25 +299,25 @@ section{
 /* Hide the element by animating its width to 0, and apply opacity and transform */
 .display-none {
     opacity: 0;
-    transform: translateY(-20px); /* Or use other transformations like translateX */
-    pointer-events: none; /* Prevent interaction while hidden */
-    width: 0; /* Start with width 0 to hide */
-    transition: width 0.5s ease, opacity 0.5s ease, transform 0.5s ease; 
+    transform: translateY(-20px);
+    pointer-events: none;
+    width: 0;
+    transition: width 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 /* Show the element by resetting width, opacity, and transform */
 .display-none-opps {
     opacity: 1;
-    transform: translateY(0); /* Reset to original position */
-    pointer-events: auto; /* Enable interaction */
-    width: 100%; /* Set the width to 100% or a specific value */
+    transform: translateY(0);
+    pointer-events: auto;
+    width: 100%;
 }
 
 /* slider section working */
 
 /* smaller devices */
 @media (max-width: 992px) {
-    .dis-none{
+    .dis-none {
         display: none;
     }
 
@@ -340,6 +348,7 @@ section{
         margin-bottom: 30px;
         margin-left: unset;
     }
+
     .servicecard {
         margin-block: 20px;
     }
@@ -353,9 +362,11 @@ section{
         margin-top: 10rem;
     }
 
-    .Client-logo{
+    .Client-logo {
         height: 150px;
         margin-block: 40px;
+        width: auto;
+        margin-inline: unset;
     }
 
     .contact-div {
@@ -370,62 +381,35 @@ section{
 
 }
 
-/* #works {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    position: relative;
-    
-}
-.left-part {
-    width: 40%;
-    padding: 20px;
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-    height: fit-content;
-    padding-top: 10em;
-}
-.right-part {
-    width: 60%;
-    padding: 20px;
-}
-.image-container {
-    height: 100vh;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-.image-container.active {
-    display: flex;
-} */
-
-input, textarea {
+input,
+textarea {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #000000;
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
-  }
+}
 
-  /* Style the placeholder text */
-  input::placeholder, textarea::placeholder {
-    color: #d3d3d3; /* Light gray placeholder color */
-    /* font-style: italic; Italicize the placeholder text */
+/* Style the placeholder text */
+input::placeholder,
+textarea::placeholder {
+    color: #d3d3d3;
     font-weight: normal;
     font-size: smaller;
-    
-  }
 
-  /* Focus styles for input and textarea */
-  input:focus, textarea:focus {
-    border-color: #007bff; /* Blue border on focus */
+}
+
+/* Focus styles for input and textarea */
+input:focus,
+textarea:focus {
+    border-color: #007bff;
     outline: none;
-  }
+}
 
-  /* Style for the input when it's focused */
-  input:focus::placeholder, textarea:focus::placeholder {
-    color: #cdcdcd; /* Change placeholder color on focus */
-    font-style: normal; /* Remove italic on focus */
-  }
+/* Style for the input when it's focused */
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #cdcdcd;
+    font-style: normal;
+}
