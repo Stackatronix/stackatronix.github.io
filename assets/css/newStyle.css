@@ -56,20 +56,20 @@ section{
     top: 70%;
     left: 51%;
     transform: translate(-50%, -50%);
-    max-width: 90vw;
+    max-width: 95vw;
     color: black;
     text-align: center;
 }
 
 .content h1 {
-    font-size: 65px;
+    font-size: 70px;
     background: linear-gradient(to right, #000000, #000000, #ffffff, #ffffff, #000000, #000000);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-family: "Urbanist", serif;
     font-weight: 600;
-    line-height: 0.8;
+    line-height: 1;
     margin-block: 15px;
 }
 
@@ -230,6 +230,12 @@ section{
     -webkit-text-fill-color: transparent;
 }
 
+
+.contact-div {
+    padding: 3em;
+    margin: 1em;
+}
+
 #quote {
     margin: 5rem;
     margin-top: 10rem;
@@ -314,6 +320,7 @@ section{
 
     .content h1 {
         font-size: 45px;
+        padding-top: 2em;
     }
 
     .content p {
@@ -322,7 +329,11 @@ section{
     }
 
     #number h4 {
-        font-size: 28px;
+        font-size: 30px;
+    }
+
+    .innumber{
+        margin-top: 10em;
     }
 
     .our-headings {
@@ -345,6 +356,16 @@ section{
     .Client-logo{
         height: 150px;
         margin-block: 40px;
+    }
+
+    .contact-div {
+        padding: 1em;
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .our-headings{
+        padding-left: 0.5em;
     }
 
 }
