@@ -16,7 +16,7 @@ section{
     margin-top: 7rem;
 }
 
-#Section1 {
+#home {
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.6), rgb(255, 255, 255)),
         url('./../media/1SecBg2.jpg');
@@ -94,21 +94,21 @@ section{
     background: radial-gradient(circle, rgba(48, 55, 62, 1) 0%, rgb(0, 0, 0) 50%, rgba(48, 55, 62, 1) 100%);
 }
 
-#section2 h6 {
+#number h6 {
     font-family: "Inter", serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 16px;
     color: rgba(48, 55, 62, 1);
     margin-bottom: 23px;
 }
 
-#section2 h4 {
+#number h4 {
     font-family: "Urbanist", serif;
     font-weight: 500;
     line-height: 1.3;
 }
 
-#section2 h4 span {
+#number h4 span {
     color: rgba(57, 167, 255, 1);
 }
 
@@ -125,21 +125,21 @@ section{
     clip-path: polygon(47% 28%, 48% 49%, 47% 71%, 46% 50%);
 }
 
-#section2 h1 {
+#number h1 {
     font-family: "Urbanist", serif;
     font-weight: 600;
     font-size: 70px;
     color: rgba(57, 167, 255, 1);
 }
 
-#section2 p, #section7 p{
+#number p, #works p, .copyright{
     font-family: "Inter", serif;
     font-weight: 300;
     font-size: 13px;
     color: rgba(23, 23, 23, 1);
 }
 
-#section3 h2, #section7 h2 {
+#challenges h2, #works h2 {
     background: radial-gradient(circle at top right, rgba(17, 17, 17, 1), rgba(45, 45, 45, 1), rgba(57, 167, 255, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -170,7 +170,7 @@ section{
     padding-bottom: 40px;
 }
 
-#section4 {
+#services {
     margin-top: 160px;
 }
 
@@ -180,6 +180,17 @@ section{
     font-size: 60px;
     line-height: 0.8;
     margin-left: 60px;
+}
+#contactus{
+    margin:0;
+    margin-top: 8em;
+}
+
+
+#contactus p{
+    font-family: "Urbanist", serif;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .our-headings span {
@@ -219,12 +230,12 @@ section{
     -webkit-text-fill-color: transparent;
 }
 
-#section5 {
+#quote {
     margin: 5rem;
     margin-top: 10rem;
 }
 
-#section5 h1 {
+#quote h1 {
     background: radial-gradient(circle, rgba(45, 45, 45, 1), rgba(208, 241, 249, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -235,23 +246,31 @@ section{
     line-height: 0.77;
 }
 
-#section5 p, #section8 p{
+#quote p{
     font-family: "Urbanist", serif;
     font-weight: 400;
     font-size: 20px;
 }
 
-#section6{
+#clients{
     margin-top: 150px;
 }
 
 .Client-logo{
-    height: 100px;
+    height: 80px;
+    width: auto;
 }
 
-#section7{
-    margin-top: 7rem;
+#hintlogo{
+    height: 60px;
+    margin: 0.5em;
 }
+
+#works{
+    margin-top: 7rem;
+    padding: 1em;
+}
+
 
 /* slider section working */
 .slider-container {
@@ -294,15 +313,16 @@ section{
     }
 
     .content h1 {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .content p {
-        font-size: 12px;
+        padding-top: 2em;
+        font-size: 16px;
     }
 
-    #section2 h4 {
-        font-size: 14px;
+    #number h4 {
+        font-size: 28px;
     }
 
     .our-headings {
@@ -317,7 +337,7 @@ section{
         display: none;
     }
 
-    #section5 {
+    #quote {
         margin: unset;
         margin-top: 10rem;
     }
@@ -329,7 +349,7 @@ section{
 
 }
 
-/* #section7 {
+/* #works {
     display: flex;
     flex-direction: row;
     height: 100vh;
