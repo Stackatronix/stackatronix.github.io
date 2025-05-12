@@ -202,29 +202,26 @@ section {
 }
 
 .servicecard {
-    background: conic-gradient(from 135deg,
-            rgba(208, 241, 249, 0.05) 0%,
-            rgba(208, 241, 249, 0.05) 33%,
-            /* Transition to new foggy color */
-            rgba(160, 200, 255, 0.1) 33%,
-            /* New foggy color starts */
-            rgba(160, 200, 255, 0.1) 66%,
-            /* New foggy color ends */
-            rgba(57, 167, 255, 0.05) 66%,
-            rgba(57, 167, 255, 0.05) 100%);
+    background: #F5FAFF;
     border-radius: 20px;
     padding: 0;
     margin: 5px;
     border: rgba(57, 167, 255, 0.05) solid 1px;
 }
 
-.servicecard h2 {
+.servicecard h2{
     font-family: "Urbanist", serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 28px;
     background: linear-gradient(135deg, rgba(45, 45, 45, 1), rgba(45, 45, 45, 1), rgba(255, 255, 255, 0.3));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.servicecard a{
+    font-family: "Urbanist", serif;
+    font-size: small;
+    font-weight: 600;
 }
 
 .servicecard p,
@@ -276,8 +273,12 @@ label {
 }
 
 #hintlogo {
-    height: 60px;
+    height: 50px;
     margin: 0.5em;
+}
+
+#Braylenlogo {
+    height: 60px;
 }
 
 #works {
