@@ -50,7 +50,22 @@
       </div>
     </div>
   </nav>
-  <section id="home" class="container-fluid row">
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
+      
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <img src="./assets/media/ad.png" class="modal-img">
+        
+
+    </div>
+  </div>
+</div>
+
+
+  <section id="home" class="container-fluid row g-0">
     <div class="col-12 m-3"></div>
     <div class="blur-gradient">
     </div>
@@ -62,6 +77,8 @@
         <img src="./assets/Icons/SVG.png" alt="Icon" width="20" height="20">
       </a>
     </div>
+
+    
   </section>
   <section id="number" class="container d-flex justify-content-center align-items-center">
     <div class="row">
@@ -420,6 +437,14 @@
       submitform(e,form,status)
     });
   </script>
+
+  <script>
+  // Automatically show the modal on page load
+  window.addEventListener('DOMContentLoaded', (event) => {
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    myModal.show();
+  });
+</script>
 </body>
 
 </html>

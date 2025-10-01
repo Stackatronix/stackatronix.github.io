@@ -412,3 +412,13 @@ textarea:focus::placeholder {
     color: #cdcdcd;
     font-style: normal;
 }
+
+.modal-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
