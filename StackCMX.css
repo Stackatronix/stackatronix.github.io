@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* VARIABLES */
 :root {
     --dark: #2d2d2d;
@@ -77,5 +80,57 @@ h1 {
   width: 80%;
   background: linear-gradient(to right, transparent, #999, transparent);
   border: none;
+}
+
+
+.grayscale {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.grayscale:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* 1. Prevent text selection */
+.accordion-button,
+.accordion-body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+ */
+  user-select: none;         /* Modern browsers */
+}
+
+/* 2. Default accordion style cleanup */
+.accordion-button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+
+/* 3. Gold background when expanded */
+.accordion-button:not(.collapsed) {
+  background-color: gold;
+  color: black; /* Optional: better contrast */
+}
+
+/* 4. Arrow icon style */
+.accordion-button::after {
+  content: '⌄';
+  font-size: 1rem;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: '⌃';
+  transform: rotate(180deg);
 }
 
